@@ -1,0 +1,24 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local databases, exports, and user data
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+petroleum.cypher
+petroleum_import_review.csv
+section6-live.xml
+outputs/
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+
+# Local package/runtime artifacts
+node_modules/

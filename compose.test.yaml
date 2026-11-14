@@ -1,0 +1,32 @@
+services:
+  mysql-test:
+    image: ${MYSQL_TEST_IMAGE:-mysql:8.4}
+    environment:
+      MYSQL_DATABASE: cn230_test
+      MYSQL_ROOT_PASSWORD: test_root_password
+      MYSQL_USER: tester
+      MYSQL_PASSWORD: test_password
+    volumes:
+      - srs_data:/var/lib/mysql
+      - ./02_accounts.sql:/docker-entrypoint-initdb.d/02_accounts.sql:ro
+      - type: bind
+        source: ./schema.sql
+        target: /docker-entrypoint-initdb.d/01-schema.sql
+        read_only: true
+        bind:
+          create_host_path: false
+    healthcheck:
+      test: ["CMD", "mysql", "--protocol=TCP", "-h", "127.0.0.1", "-utester", "-ptest_password", "-D", "cn230_test", "-e", "SELECT 1"]
+      interval: 3s
+      timeout: 3s
+      retries: 60
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    depends_on:
+      mysql-test:
+        condition: service_healthy
+
+volumes:
+  srs_data:

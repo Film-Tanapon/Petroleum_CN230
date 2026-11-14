@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Petroleum · Data dashboard</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f4f5f1;--ink:#172d29;--muted:#687773;--green:#136c54;--line:#dce2dc;--paper:#fff;--gold:#ca9a46}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);font:14px 'Noto Sans Thai',Arial,sans-serif}
+button,input,select{font:inherit}button,select{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ca9a46;outline-offset:3px}
+header{background:#173e33;color:white;padding:22px 4vw;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font:800 23px Manrope,Arial;letter-spacing:-1px}.brand span{color:#a9d7ae}header small{color:#bed3c7}.head-actions{display:flex;gap:10px;align-items:center}
+button{padding:10px 16px;border:1px solid var(--line);border-radius:8px;background:white;color:var(--ink)}button.primary{background:#dbedb3;border-color:#dbedb3;font-weight:600}
+main{max-width:1550px;margin:auto;padding:32px 4vw 40px}.title-row{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.eyebrow{font:500 11px 'IBM Plex Mono',monospace;letter-spacing:2px;color:var(--green);text-transform:uppercase}
+h1{font-size:32px;line-height:1.25;margin:10px 0;font-weight:600;letter-spacing:-.8px}p{color:var(--muted);line-height:1.7;margin:6px 0}
+.source{font-size:12px;text-align:right;max-width:420px}.source strong{color:var(--ink)}.status{display:inline-flex;align-items:center;gap:6px;color:#286547}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:#6c994a}
+.filters{margin:24px 0 20px;background:white;border:1px solid var(--line);border-radius:12px;display:grid;grid-template-columns:1fr 1fr 1.5fr 2fr auto;gap:16px;padding:16px;align-items:end}
+label{display:block;color:var(--muted);font-size:12px;margin-bottom:6px}select,input[type=search]{width:100%;border:1px solid var(--line);padding:10px 12px;border-radius:6px;background:#fafbf8;color:var(--ink);height:43px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:20px}.card .label{color:var(--muted);font-size:12px}.number{font:600 clamp(23px,2.2vw,36px) Manrope,Arial;margin:12px 0 7px;letter-spacing:-1px;overflow-wrap:anywhere}.detail{font-size:11px;color:var(--muted)}.card.feature{background:#1c493d;color:#fff;border-color:#1c493d}.feature .label,.feature .detail{color:#c5d8ce}
+.chart-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;margin:20px 0}.panel{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.panel-head{padding:20px 22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}h2{font-size:16px;margin:0 0 5px;font-weight:600}.sub{font-size:11px;color:var(--muted)}.legend{display:flex;gap:14px;font-size:10px;color:var(--muted);white-space:nowrap}.dot{display:inline-block;width:7px;height:7px;background:var(--green);border-radius:50%;margin-right:5px}.dot.gold{background:var(--gold)}
+canvas{display:block;width:100%;height:270px;padding:0}.bars{padding:24px 22px 20px;min-height:270px}.bar-row{margin-bottom:17px}.bar-meta{display:flex;justify-content:space-between;gap:16px;margin-bottom:6px;font-size:12px}.bar-meta span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:65%}.track{height:7px;background:#eff3ed;border-radius:6px}.fill{height:100%;background:var(--green);border-radius:6px}
+.table-head{padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;white-space:nowrap}th{text-align:left;font-size:11px;color:var(--muted);background:#f8faf6;font-weight:500;padding:13px 18px;border-block:1px solid var(--line)}td{font-size:12px;padding:14px 18px;border-bottom:1px solid #edf0eb}th.num,td.num{text-align:right;font-family:'IBM Plex Mono',monospace}tbody tr:hover{background:#f9fbf5}.pill{padding:4px 8px;background:#eaf3e9;border-radius:5px;font-size:10px;color:#306946}.negative{color:#b74f32}.empty{text-align:center;color:var(--muted);padding:40px}
+.table-footer{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;gap:16px;color:var(--muted);font-size:12px}.pagination{display:flex;align-items:center;gap:12px}button:disabled{opacity:.4;cursor:default}
+.note{font-size:11px;margin:14px 2px;line-height:1.8;color:var(--muted)}footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);margin-top:28px;padding-top:16px;color:var(--muted);font-size:11px}
+.notice{margin-top:18px;background:#fbf3df;border:1px solid #ead8a2;border-radius:8px;padding:12px 16px;color:#695625;font-size:12px}.file-controls{display:flex;gap:8px;align-items:center}.file-controls select{max-width:125px;color:white;background:#285345;border-color:#567467;font-size:11px;height:39px}
+@media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:1fr 1fr}.filters .search-box{grid-column:1/-1}.chart-grid{grid-template-columns:1fr}header{flex-wrap:wrap}.source{text-align:left}.title-row{align-items:flex-start;flex-direction:column}.head-actions{flex-wrap:wrap}}
+@media(max-width:560px){main{padding:24px 16px}.brand{font-size:20px}h1{font-size:26px}.card{padding:16px}.number{font-size:23px}.legend{display:none}.table-footer{flex-direction:column}.head-actions small{display:none}.table-head{align-items:flex-start;flex-direction:column}footer{gap:20px}}
+
+.view-tabs{display:flex;gap:8px;margin-top:28px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.view-tabs button{background:transparent;border-color:transparent;font-weight:600;display:flex;align-items:center;gap:12px;padding:11px 20px}
+.view-tabs button.active{background:#173e33;color:white}
+.view-tabs span{font:11px 'IBM Plex Mono',monospace;opacity:.7}
+.filters{grid-template-columns:1fr 1fr 1.4fr 1fr 1.6fr auto;margin-bottom:6px}
+.import-info{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:18px}
+.import-info p{font-size:11px}.import-info button{white-space:nowrap;font-size:12px}
+.export-actions{display:flex;gap:8px;flex-wrap:wrap}
+#upload{white-space:nowrap}
+[hidden]{display:none!important}
+@media(max-width:1100px){.filters{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.filters{grid-template-columns:1fr 1fr}.view-tabs{display:grid;grid-template-columns:1fr 1fr}.view-tabs button{justify-content:space-between}.import-info{align-items:flex-start;flex-direction:column}.table-head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div><div class="brand">PETROLEUM<span>.</span></div><small>CN230 · depresSQL</small></div>
+<div class="head-actions"><small>Data explorer</small><button class="primary" id="refresh">รีเฟรชจาก MySQL</button></div></header>
+<main>
+<div class="title-row"><div><div class="eyebrow">Petroleum data / Thailand</div><h1 id="viewTitle">ค่าปัจจัยการปล่อยคาร์บอน</h1><p id="viewSubtitle">ค่า Emission Factor ต่อหน่วยเชื้อเพลิง ไม่ใช่ปริมาณการปล่อยจริง</p></div><div class="source"><div class="status">กำลังเชื่อมต่อ MySQL</div><div id="source"></div><div id="range"></div></div></div>
+<nav class="view-tabs" aria-label="ประเภทข้อมูล"><button data-view="sale" aria-pressed="false">จำหน่าย<span>24,402</span></button><button data-view="production" aria-pressed="false">ผลิต<span>34,905</span></button><button data-view="supply" aria-pressed="false">จัดหา<span>573</span></button><button data-view="reserve" aria-pressed="false">สำรอง<span>0</span></button><button data-view="emission_factor" aria-pressed="false">คาร์บอน<span>0</span></button></nav><div class="notice" id="connection" role="status">กำลังโหลดข้อมูลจาก MySQL…</div><div class="filters">
+<div id="yearBox"><label for="year">ปี (ค.ศ.)</label><select id="year"></select></div>
+<div id="monthBox"><label for="month">เดือน</label><select id="month"><option value="">ทุกเดือน</option></select></div>
+<div><label for="product">ผลิตภัณฑ์</label><select id="product"></select></div>
+<div><label id="unitLabel" for="unit">หน่วย</label><select id="unit"></select></div><div class="search-box"><label id="searchLabel" for="search">แหล่งผลิต</label><input type="search" id="search" placeholder="ค้นหาชื่อแหล่งผลิต เช่น นงเยาว์"></div>
+<button id="reset">ล้างตัวกรอง</button></div>
+<div class="cards">
+<div class="card feature"><div class="label" id="metricLabel">มูลค่าจำหน่ายรวม</div><div class="number" id="sales">—</div><div class="detail" id="moneyUnit">ตามหน่วยเงินต้นทาง</div></div>
+<div class="card"><div class="label" id="secondLabel">ค่าภาคหลวงรวม</div><div class="number" id="royalty">—</div><div class="detail" id="royaltyDetail"></div></div>
+<div class="card"><div class="label" id="thirdLabel">ปริมาตรจำหน่ายของเหลว</div><div class="number" id="volume">—</div><div class="detail" id="volumeDetail">บาร์เรล · เฉพาะรายการที่มีค่า</div></div>
+<div class="card"><div class="label">จำนวนรายการ</div><div class="number" id="records">—</div><div class="detail" id="fields"></div></div>
+</div>
+<div class="chart-grid"><section class="panel"><div class="panel-head"><div><h2 id="trendTitle">แนวโน้ม</h2><div class="sub" id="trendCaption">ผลรวมรายเดือนตามตัวกรอง</div></div></div><canvas id="trend" role="img" aria-label="กราฟข้อมูลตามตัวกรอง"></canvas></section>
+<section class="panel"><div class="panel-head"><div><h2 id="rankTitle">อันดับ</h2><div class="sub" id="rankCaption"></div></div></div><div class="bars" id="bars"></div></section></div>
+<div class="notice" id="notice" role="status"></div>
+<section class="panel" style="margin-top:20px"><div class="table-head"><div><h2 id="tableTitle">รายการ</h2><div class="sub">เรียงจากเดือนล่าสุด · ตัวเลขคงหน่วยตามคอลัมน์</div></div><div class="export-actions"><button id="export">Export ผลกรอง CSV</button><button id="exportAll">Export ทั้งหมด</button></div></div>
+<div class="table-wrap"><table><thead><tr id="headers"></tr></thead><tbody id="body"></tbody></table></div>
+<div class="table-footer"><span id="pageInfo"></span><div class="pagination"><button id="prev">ก่อนหน้า</button><span id="page"></span><button id="next">ถัดไป</button></div></div></section>
+<p class="note">ข้อมูลจาก MySQL ณ เวลาที่โหลดล่าสุด · ปี พ.ศ. แปลงเป็น ค.ศ. · Export ผลกรองรวมทุกหน้าของตาราง · Export ทั้งหมดรวมข้อมูลทุกแถวในประเภทที่เลือก · ค่าทศนิยมแสดง 2 ตำแหน่งในหน้าเว็บและเก็บทศนิยมจาก MySQL ครบเมื่อ export</p>
+<footer><span>Petroleum · ฐานข้อมูล MySQL ของทีม</span><span>MySQL dashboard · อ่านข้อมูลเมื่อเปิดหน้าและกดรีเฟรช</span></footer>
+</main>
+
+
+<script src="/dashboard.js"></script>
+</body></html>

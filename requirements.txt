@@ -1,0 +1,5 @@
+mysql-connector-python>=9.2,<10
+sentence-transformers>=3,<6
+numpy>=1.26,<3
+google-genai>=1,<3
+python-dotenv>=1,<2
