@@ -2,13 +2,13 @@
 from decimal import Decimal
 import unittest
 
-from import_reserve_annual import ROOT, identifier, parse_value, read_records
+from import_data import ROOT, identifier, parse_value, read_reserve_records
 
 
 class ReserveTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.records = read_records(ROOT / 'CN230 Petrolium Data' / 'Reserve-2')
+        cls.records = read_reserve_records(ROOT / 'CN230 Petrolium Data' / 'Reserve-2')
 
     def test_actual_files_and_units(self):
         self.assertEqual(len(self.records), 1200)

@@ -2,7 +2,7 @@
 import unittest
 from unittest.mock import MagicMock, patch
 
-from import_emission_factor import COLUMNS, DEFAULT_FILE, read_records, resolve_reference
+from import_data import COLUMNS, DEFAULT_FILE, read_emission_records, resolve_reference
 
 
 class ExcelValidationTests(unittest.TestCase):
@@ -10,11 +10,11 @@ class ExcelValidationTests(unittest.TestCase):
         book = MagicMock()
         book.sheetnames = ["MySQL_Import_Ready"]
         book.__getitem__.return_value.iter_rows.return_value = iter([COLUMNS, *rows])
-        with patch("import_emission_factor.load_workbook", return_value=book):
-            return read_records("unused.xlsx")
+        with patch("import_data.load_workbook", return_value=book):
+            return read_emission_records("unused.xlsx")
 
     def test_actual_workbook_has_35_valid_factors(self):
-        self.assertEqual(len(read_records(DEFAULT_FILE)), 35)
+        self.assertEqual(len(read_emission_records(DEFAULT_FILE)), 35)
 
     def test_duplicate_factor_is_rejected(self):
         row = ("EF-1", "PROD-NG", "UNIT-MJ", 1, "Stationary", "NCV")

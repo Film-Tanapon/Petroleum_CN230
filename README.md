@@ -106,18 +106,22 @@ py -3.12 import_data.py --folder ".\CN230 Petrolium Data" --database petroleum -
 Source data can also exceed the SRS decimal ranges; review failures rather than widening
 columns silently. Excel import is not implemented by this schema change.
 
+All data import code lives in `import_data.py`. Select `--type csv` (default),
+`--type emission`, or `--type reserve`; use `--help` with a mode for its options.
+The default CSV folder is the project's `CN230 Petrolium Data` directory.
+
 ## Import Emission Factor from Excel
 
 Run the CSV import first, then this importer: `import_data.py --apply` clears all ten
-tables, including Emission_Factor. This separate Excel importer only inserts/updates
+tables, including Emission_Factor. This Excel import mode only inserts/updates
 factors present in the workbook and adds missing Product/Unit references. It does not
 clear tables or remove factors absent from the workbook. Repeated imports update by
 `factor_id` and leave identical records unchanged.
 
 ```powershell
 py -3.12 -m pip install mysql-connector-python python-dotenv openpyxl
-py -3.12 import_emission_factor.py --dry-run
-py -3.12 import_emission_factor.py --apply
+py -3.12 import_data.py --type emission --dry-run
+py -3.12 import_data.py --type emission --apply
 ```
 
 Connection defaults come from the project's `.env` or environment variables. If no
@@ -125,7 +129,7 @@ Connection defaults come from the project's `.env` or environment variables. If 
 Override with `--host`, `--port`, `--database`, `--user`, or `--file` as needed:
 
 ```powershell
-py -3.12 import_emission_factor.py --file ".\CN230 Petrolium Data\TGO_2569_Emission_Factor_Petroleum_Fuels.xlsx" --database petroleum --host 127.0.0.1 --port 3308 --user root --dry-run
+py -3.12 import_data.py --type emission --file ".\CN230 Petrolium Data\TGO_2569_Emission_Factor_Petroleum_Fuels.xlsx" --database petroleum --host 127.0.0.1 --port 3308 --user root --dry-run
 ```
 
 The importer reads `MySQL_Import_Ready`, validates all records before connecting,
@@ -156,13 +160,13 @@ Calculation regression checks: `node --test Test/test_carbon_math.cjs`.
 
 ## Import annual proven reserves
 
-`import_reserve_annual.py` reads the three `2025_p1-*.xlsx` files in
+`import_data.py --type reserve` reads the three `2025_p1-*.xlsx` files in
 `CN230 Petrolium Data/Reserve-2`. Their contents cover 2017-2025, not only 2025.
 Use the existing schema; no additional table is required.
 
 ```powershell
-py -3.12 import_reserve_annual.py --dry-run
-py -3.12 import_reserve_annual.py --apply
+py -3.12 import_data.py --type reserve --dry-run
+py -3.12 import_data.py --type reserve --apply
 ```
 
 Connection defaults come from `.env`; override using `--host`, `--port`,
