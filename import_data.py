@@ -1,6 +1,6 @@
 """Rebuild the ten CN230 project tables from the petroleum CSV folder, in one transaction.
 Install: py -m pip install mysql-connector-python
-Usage:   py reset_petroleum_original_fields.py --database petroleum --dry-run
+Usage:   py import_data.py --database petroleum --dry-run
 """
 import argparse
 import csv
@@ -173,11 +173,20 @@ class Importer:
         elif kind=="price":
             label = SUPPLY[tag][0]
             denom = self.args.gas_price_unit if tag=="gas" else "bbl"
+            if not r["FIELD"].strip():
+                self.issues.append((self.file,self.line,"missing required Price_Monthly.field_id","",""))
+                return
+            if not denom:
+                self.issues.append((self.file,self.line,"unconfirmed gas price unit; set --gas-price-unit after verification","",""))
+                return
             for currency in PRICE_CURR[self.args.price_currency]:
                 self.add("Price_Monthly",(product(label),self.ref("Field",r["FIELD"]),unit(denom),
                          number(r[currency+"/BARREL"]),currency,month,year),currency)
         else:
             sale,royalty = number(r["VALUES"]),number(r["ROYALTY"])
+            if not r["FIELD"].strip():
+                self.issues.append((self.file,self.line,"missing required Sale.field_id",sale,royalty))
+                return
             if any(n is not None and n<0 for n in (sale,royalty)) and not self.args.include_negative_sales:
                 self.issues.append((self.file,self.line,"negative sale_value or royalty",sale,royalty))
                 return

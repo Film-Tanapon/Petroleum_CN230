@@ -62,3 +62,173 @@ py -3.12 Dashborad/server.py
 อ้างอิง
 https://github.com/googleapis/python-genai
 https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+
+## Database schema (SRS)
+
+`schema.sql` follows SRS sections 4.2-4.3 for all ten tables, including
+`VARCHAR(50)` identifiers, column-specific decimal precision and nullable fields.
+Document inconsistencies are resolved as follows:
+
+- `Unit.unit_id` follows section 4.3.3 (section 4.2.3 prints `field_id`).
+- `Supply_Monthly.area` follows section 4.2.6: `VARCHAR(100) NULL`, without a foreign key.
+- `Reserve_Annual` keeps the name used by the relational schema (the dictionary heading has a typo).
+- BR-08 keeps `UNIQUE(field_id, product_id, unit_id, month, year)` without currency.
+  MySQL allows repeated unique-key groups containing NULL; missing dates remain nullable per SRS.
+- BR-01 needs a post-import audit across Field, Production_Monthly and Block;
+  foreign keys alone do not ensure that every Field has a production record.
+
+Apply to an **empty** database after MySQL is ready (PowerShell):
+
+```powershell
+docker compose exec db mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS petroleum CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+$dbContainer = docker compose ps -q db
+docker cp .\schema.sql "${dbContainer}:/tmp/petroleum-schema.sql"
+docker compose exec db mysql -u root -p petroleum -e "source /tmp/petroleum-schema.sql"
+```
+
+This creates tables; it does not migrate an existing database. Do not delete existing
+production tables to apply it. Back up and prepare an ALTER migration separately.
+
+The CSV importer still needs separate alignment before a full import: its default
+`--price-currency both` conflicts with BR-08 (choose one confirmed currency), and
+gas prices need a confirmed `--gas-price-unit` because `Price_Monthly.unit_id` is required.
+Rows with a missing required Sale/Price_Monthly field are skipped and listed with
+their source record number in `petroleum_import_review.csv`. Gas prices without a
+confirmed `--gas-price-unit` are also skipped and reported; their unit is not guessed.
+For example, to rehearse importing THB prices while leaving unconfirmed gas prices
+for later review:
+
+```powershell
+py -3.12 import_data.py --folder ".\CN230 Petrolium Data" --database petroleum --host 127.0.0.1 --port 3308 --user root --dry-run --price-currency THB
+```
+
+Source data can also exceed the SRS decimal ranges; review failures rather than widening
+columns silently. Excel import is not implemented by this schema change.
+
+## Import Emission Factor from Excel
+
+Run the CSV import first, then this importer: `import_data.py --apply` clears all ten
+tables, including Emission_Factor. This separate Excel importer only inserts/updates
+factors present in the workbook and adds missing Product/Unit references. It does not
+clear tables or remove factors absent from the workbook. Repeated imports update by
+`factor_id` and leave identical records unchanged.
+
+```powershell
+py -3.12 -m pip install mysql-connector-python python-dotenv openpyxl
+py -3.12 import_emission_factor.py --dry-run
+py -3.12 import_emission_factor.py --apply
+```
+
+Connection defaults come from the project's `.env` or environment variables. If no
+`MYSQL_PASSWORD` is supplied, the script prompts without echoing the password.
+Override with `--host`, `--port`, `--database`, `--user`, or `--file` as needed:
+
+```powershell
+py -3.12 import_emission_factor.py --file ".\CN230 Petrolium Data\TGO_2569_Emission_Factor_Petroleum_Fuels.xlsx" --database petroleum --host 127.0.0.1 --port 3308 --user root --dry-run
+```
+
+The importer reads `MySQL_Import_Ready`, validates all records before connecting,
+and stores the supplied total kgCO2e factor (not individual gas components).
+It reuses Product names Natural Gas/LPG and exact unit symbols, ignoring case,
+and adds the other fuel groups and missing units from the workbook mapping.
+It refuses ambiguous references or IDs already assigned a different meaning.
+Activity details (including blend type) remain in `activity_type` and `basis`.
+Both dry runs and failures roll back all Product, Unit and factor writes together.
+
+## Carbon scenario dashboard
+
+Start `py -3.12 Dashborad/server.py`, then open `http://127.0.0.1:8000/carbon`
+or choose the carbon scenario link in the existing dashboard header.
+Import production CSV and Emission Factor Excel first. The page reads the same
+MySQL snapshot and never writes to the database.
+
+This is a hypothetical combustion scenario for produced natural gas, **not actual
+production-process emissions**. Select a stationary Natural Gas NCV factor in SCF
+and a combustion share, then filter by year, month, or field. The calculation is
+MMSCFD × 1,000,000 × production_days × share × kgCO2e/SCF ÷ 1,000.
+Unsupported products/units and missing production days are shown as uncalculable,
+not zero. Coverage is by record count. CSV exports include the scenario, factor,
+share and exclusion reasons. Actual production emissions require activity inputs
+such as fuel consumed, electricity, flaring and methane leakage.
+
+Calculation regression checks: `node --test Test/test_carbon_math.cjs`.
+
+## Import annual proven reserves
+
+`import_reserve_annual.py` reads the three `2025_p1-*.xlsx` files in
+`CN230 Petrolium Data/Reserve-2`. Their contents cover 2017-2025, not only 2025.
+Use the existing schema; no additional table is required.
+
+```powershell
+py -3.12 import_reserve_annual.py --dry-run
+py -3.12 import_reserve_annual.py --apply
+```
+
+Connection defaults come from `.env`; override using `--host`, `--port`,
+`--database`, and `--user`. Use `--folder` to change the Reserve-2 directory.
+The importer preserves native units: MMbbl for oil/condensate and Bcf for gas,
+without changing the numerical scale. Missing reserves remain NULL, not zero.
+Values are rounded HALF_UP to six decimal places per the existing schema.
+`reserve_import_review.csv` records the source row, original/stored values,
+rounding and use of cached Excel formula results (including external formulas).
+Cached values are not recalculated; a formula without a cached result stops import.
+
+Existing Product, Unit and exact Block labels are reused; missing references are
+added. Grouped block labels and footnote asterisks are retained without guessing
+individual blocks. Reruns match product/block/unit/year, update changed values,
+and do not duplicate or clear existing rows. Ambiguous references or duplicate
+existing grains stop and roll back the transaction.
+
+Run CSV import **before** the reserve and Emission Factor importers because
+`import_data.py --apply` resets all ten tables. Refresh the dashboard afterward.
+Checks: `py -3.12 -m unittest discover -s Test -p test_import_reserve_annual.py`.
+
+## Production and supply dashboard volumes
+
+The production and supply tabs show separate totals for liquid and gas volumes,
+instead of averaging source daily rates. Choose m3/standard m3 or bbl/MMSCF;
+liquids and gas are never added into a single total. A separate selector chooses
+which family drives the trend and ranking graphs.
+
+Production volume uses quantity × actual production_days. Supply volume is an
+estimate using daily_rate × calendar days in the month, including leap years.
+1 bbl = 0.158987294928 m3; 1 MMSCF = 28,316.846592 standard m3, assuming
+the source standard gas conditions. This is volume conversion, not oil/energy
+equivalence. Unsupported units or missing inputs stay null and are counted in
+coverage. Converted monthly volume, unit, days and exclusion reasons are included
+in the table and both CSV export modes. The underlying MySQL records are unchanged.
+
+Checks: `node --test Test/test_volume_math.cjs`.
+
+### BOED and MMBOE display
+
+The production/supply tabs default to BOED and the reserve tab uses MMBOE.
+Existing physical-volume display modes are still selectable. This changes only
+the display, not stored MySQL values. Production uses the source oil_equivalent
+as BOED for gas/condensate when present, and crude oil uses 1 bbl = 1 BOE.
+Positive production with zero oil_equivalent is excluded as inconsistent rather
+than silently treated as zero. Missing equivalents can use the displayed estimates.
+
+Gas defaults to 174.4 BOE/MMSCF and condensate to 0.9096 BOE/bbl. These are
+**inferred estimates** from median positive equivalent/rate ratios in the project's
+production CSVs, not certified thermal factors or universal conversion constants.
+They are editable on the dashboard and apply to supply, reserve, and production
+records without source equivalents. Actual heat content can require other factors.
+For comparison, USGS uses a different approximate convention of 6,000 cubic feet
+of gas per BOE in its assessment:
+https://pubs.usgs.gov/circ/1995/circ1118/resass/metric.html
+
+Monthly production BOE = BOED × actual production_days; supply BOE = estimated
+BOED × calendar days. The main BOED card is total BOE divided by distinct calendar
+days in the months represented in the filtered data, not a sum of daily rates across
+months or an average per record. Months missing entirely from the filtered data are
+not inferred. Graphs use the same definition month by month; field rankings use the
+same overall date denominator for comparability. Coverage excludes unavailable
+inputs, and totals may be partial.
+
+Reserve conversion: Bcf × 1,000 × gas BOE/MMSCF ÷ 1,000,000 = MMBOE;
+crude MMbbl = MMBOE, condensate MMbbl × condensate BOE/bbl = MMBOE.
+Reserve totals/rankings require one year to avoid adding stock snapshots across
+years. CSV exports include source units, converted values, basis and assumptions.
+Checks: `node --test Test/test_boe_math.cjs`.

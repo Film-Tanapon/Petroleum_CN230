@@ -15,12 +15,12 @@ const configs = {
   columns:[['sale_id','รหัสรายการ'],['year','ปี ค.ศ.'],['month','เดือน'],['field_name','แหล่งผลิต'],['product_name','ผลิตภัณฑ์'],['volume_bbl','บาร์เรล'],['volume_mmscf','ล้าน ลบ.ฟุตมาตรฐาน'],['energy_mmbtu','ล้านบีทียู'],['sale_value','มูลค่าจำหน่าย'],['royalty','ค่าภาคหลวง'],['currency','สกุลเงิน']],
  },
  production: {
-  title:'รายการผลิต', subtitle:'ปริมาณผลิต จำนวนวันผลิต และข้อมูลบล็อกสำรวจ', metric:'quantity',
+  title:'รายการผลิต', subtitle:'ปริมาณผลิตรวม = อัตราผลิตรายวัน × วันผลิตจริง · แสดงของเหลวและก๊าซแยกหน่วย', metric:'quantity',
   group:'field_name', groupLabel:'แหล่งผลิต', search:'ค้นชื่อแหล่งผลิตหรือบล็อก', filename:'Production_Monthly',
   columns:[['production_id','รหัสรายการ'],['year','ปี ค.ศ.'],['month','เดือน'],['field_name','แหล่งผลิต'],['block','บล็อก'],['product_name','ผลิตภัณฑ์'],['quantity','อัตราผลิตตามต้นทาง'],['unit','หน่วย'],['oil_equivalent','เทียบเท่าน้ำมันดิบตามต้นทาง'],['production_days','วันที่ผลิต']],
  },
  supply: {
-  title:'รายการจัดหา', subtitle:'อัตราจัดหาเฉลี่ยรายวัน แยกตามพื้นที่และผลิตภัณฑ์', metric:'daily_rate',
+  title:'รายการจัดหา', subtitle:'ประมาณปริมาณจัดหารายเดือน = อัตราเฉลี่ยรายวัน × จำนวนวันปฏิทินในเดือน', metric:'daily_rate',
   group:'area', groupLabel:'พื้นที่จัดหา', search:'ค้นพื้นที่จัดหา', filename:'Supply_Monthly',
   columns:[['supply_id','รหัสรายการ'],['year','ปี ค.ศ.'],['month','เดือน'],['product_name','ผลิตภัณฑ์'],['area','พื้นที่จัดหา'],['daily_rate','อัตราเฉลี่ยรายวัน'],['unit','หน่วย']],
  },
@@ -30,7 +30,7 @@ const configs = {
   columns:[['reserve_id','รหัสรายการ'],['year','ปี ค.ศ.'],['block','บล็อก'],['product_name','ผลิตภัณฑ์'],['proven_reserves','ปริมาณสำรองที่พิสูจน์แล้ว'],['unit','หน่วย']],
  }
 };
-const numeric = new Set(['year','month','volume_bbl','volume_mmscf','energy_mmbtu','sale_value','royalty','quantity','oil_equivalent','production_days','daily_rate','proven_reserves','factor_value']);
+const numeric = new Set(['year','month','volume_bbl','volume_mmscf','energy_mmbtu','sale_value','royalty','quantity','oil_equivalent','production_days','daily_rate','proven_reserves','factor_value','monthly_m3','monthly_native','monthly_volume','volume_days','boe_rate','boe_volume','mmboe','gas_boe_per_mmscf','condensate_boe_per_bbl']);
 const fmt = (v, digits=2) => v===null || v===undefined ? '—' : Number(v).toLocaleString('en-US',{maximumFractionDigits:digits,minimumFractionDigits:digits});
 const compact = v => new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(v);
 const esc = v => String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -38,6 +38,15 @@ let active='emission_factor', filtered=[], page=1;
 const pageSize=15, state={};
 months.forEach((m,i)=>$('month').add(new Option(m,i+1)));
 function config(){return configs[active]}
+function isVolume(){return active==='production'||active==='supply'}
+function isBoe(){return active==='reserve'||(isVolume()&&$('volumeUnit').value==='boe')}
+function volumeKey(){return $('volumeUnit').value==='native'?'monthly_native':'monthly_m3'}
+function volumeUnit(family){if(!family)return 'ไม่ระบุ';return $('volumeUnit').value==='native'?(family==='gas'?'MMSCF':'bbl'):(family==='gas'?'Sm³':'m³')}
+function displayColumns(){
+ const columns=config().columns;
+ if(isBoe())return [...columns,...(active==='reserve'?[]:[['boe_rate','อัตรารายการ BOED'],['boe_volume','ปริมาณในเดือน BOE']]),['mmboe','ปริมาณ MMBOE'],['boe_basis','วิธีแปลง BOE'],['boe_reason','เหตุผลที่คำนวณไม่ได้'],['gas_boe_per_mmscf','อัตราก๊าซ BOE/MMSCF'],['condensate_boe_per_bbl','อัตราคอนเดนเสท BOE/bbl']];
+ return isVolume()?[...columns,['volume_days','วันที่ใช้คำนวณ'],['monthly_volume','ปริมาณรวมในเดือน'],['monthly_unit','หน่วยปริมาณรวม'],['volume_reason','เหตุผลที่คำนวณไม่ได้']]:columns;
+}
 function sum(key, rows=filtered){
  const values=rows.map(r=>r[key]).filter(v=>v!==null && v!==undefined);
  return values.length ? values.reduce((a,b)=>a+b,0) : null;
@@ -53,6 +62,7 @@ function fillSelect(id, values, all){
 }
 function remember(){
  state[active]=Object.fromEntries(['year','month','product','unit','search'].map(id=>[id,$(id).value]));
+ if(isVolume()){state[active].volumeUnit=$('volumeUnit').value;state[active].volumePhase=$('volumePhase').value}
 }
 function activate(name, reset=false){
  active=name;
@@ -80,12 +90,19 @@ function activate(name, reset=false){
  $('yearBox').hidden=active==='emission_factor';
  $('monthBox').hidden=active==='reserve'||active==='emission_factor';
  $('month').disabled=active==='reserve'||active==='emission_factor';
+ $('volumeControls').hidden=!isVolume();
  const chosen=reset?{}:state[name]||{year:String(years[0]??'')};
  ['year','month','product','unit','search'].forEach(id=>$(id).value=chosen[id]||'');
+ if(isVolume()){$('volumeUnit').value=chosen.volumeUnit||'boe';$('volumePhase').value=chosen.volumePhase||'liquid'}
  update();
 }
 function measure(){
  const c=config();
+ if(isBoe())return {key:active==='reserve'?'mmboe':'boe_volume',kind:active,label:active==='reserve'?'ปริมาณสำรองรวมเทียบเท่า':active==='production'?'อัตราผลิตรวมเฉลี่ย':'อัตราจัดหารวมเฉลี่ย',unit:active==='reserve'?'MMBOE':'BOED',method:'boe'};
+ if(isVolume()){
+  const family=$('volumePhase').value;
+  return {key:volumeKey(),family,label:(active==='production'?'ปริมาณผลิต':'ปริมาณจัดหา')+(family==='gas'?'ก๊าซรวม':'ของเหลวรวม'),unit:volumeUnit(family),method:'sum'};
+ }
  if(active==='emission_factor')return {key:null,label:'จำนวน Factor',unit:'รายการ',method:'count'};
  if(!filtered.length)return {key:null,label:'จำนวนรายการ',unit:'รายการ'};
  if(active==='sale' && unique('currency').length===1){
@@ -97,7 +114,9 @@ function measure(){
  }
  return {key:null,label:'จำนวนรายการ',unit:'รายการ',method:'count'};
 }
-function valueOf(rows,m){
+function valueOf(rows,m,periodRows=rows){
+ if(m.method==='boe')return BoeMath.aggregate(rows,m.kind,periodRows);
+ if(m.family)return VolumeMath.total(rows,m.family,m.key);
  if(!m.key)return rows.length;
  return m.method==='mean'?average(m.key,rows):sum(m.key,rows);
 }
@@ -111,6 +130,13 @@ function update(){
   (!q||[r[c.group],r.block,r.activity_type,r.basis].filter(Boolean).join(' ').toLowerCase().includes(q))
  );
  filtered.sort((a,b)=>b.year-a.year||(b.month||0)-(a.month||0));
+ $('boeControls').hidden=!isBoe();$('volumePhaseBox').hidden=isBoe();
+ if(isBoe())filtered=filtered.map(r=>({...BoeMath.convert(r,active,$('gasBoe').value,$('condBoe').value),gas_boe_per_mmscf:$('gasBoe').value,condensate_boe_per_bbl:$('condBoe').value}));
+ if(isVolume()){
+  const families=[...new Set(filtered.map(r=>r.volume_family).filter(Boolean))];
+  if(families.length===1)$('volumePhase').value=families[0];
+ }
+ if(isVolume()&&!isBoe())filtered=filtered.map(r=>({...r,monthly_volume:r[volumeKey()],monthly_unit:volumeUnit(r.volume_family)}));
  page=1;
  const m=measure(), multiReserve=active==='reserve'&&unique('year').length>1;
  const mainValue=multiReserve?null:valueOf(filtered,m);
@@ -125,6 +151,29 @@ function update(){
  $('volumeDetail').textContent=active==='sale'?'บาร์เรล · แยกจากปริมาตรก๊าซ':'จำนวนชนิดตามตัวกรอง';
  $('records').textContent=fmt(filtered.length,0);
  $('fields').textContent='จากทั้งหมด '+fmt(datasets[active].rows.length,0)+' รายการ';
+ if(isVolume()&&!isBoe()){
+  const activity=active==='production'?'ผลิต':'จัดหา',liquid=VolumeMath.total(filtered,'liquid',volumeKey()),gas=VolumeMath.total(filtered,'gas',volumeKey());
+  $('metricLabel').textContent='ปริมาณ'+activity+'ของเหลวรวม';$('sales').textContent=fmt(liquid);
+  $('moneyUnit').textContent=volumeUnit('liquid')+' · น้ำมันดิบ + คอนเดนเสท · เฉพาะรายการที่คำนวณได้';
+  $('secondLabel').textContent='ปริมาณ'+activity+'ก๊าซรวม';$('royalty').textContent=fmt(gas);
+  $('royaltyDetail').textContent=volumeUnit('gas')+' · ไม่รวมกับปริมาณของเหลว';
+  const valid=filtered.filter(r=>r.monthly_m3!==null).length;
+  $('thirdLabel').textContent='รายการที่คำนวณปริมาณได้';$('volume').textContent=fmt(valid,0)+' / '+fmt(filtered.length,0);
+  $('volumeDetail').textContent='ขาดหรือไม่ถูกต้อง '+fmt(filtered.length-valid,0)+' รายการ · ไม่แทนด้วยศูนย์';
+ }
+ if(isBoe()){
+  const valid=filtered.filter(r=>r.boe_volume!==null).length;
+  $('metricLabel').textContent=m.label+(multiReserve?' · เลือกปีเดียว':'');
+  $('sales').textContent=fmt(mainValue);
+  $('moneyUnit').textContent=m.unit+(active==='reserve'?' · ล้านบาร์เรลเทียบเท่าน้ำมันดิบ':' · เฉลี่ยต่อวันปฏิทินของเดือนในผลกรอง');
+  if(isVolume()){
+   $('secondLabel').textContent='ปริมาณรวมในช่วงที่เลือก';
+   $('royalty').textContent=fmt(BoeMath.aggregate(filtered,'reserve'),6);
+   $('royaltyDetail').textContent='MMBOE · ล้านบาร์เรลเทียบเท่าน้ำมันดิบ';
+  }
+  $('thirdLabel').textContent='รายการที่แปลงเป็น BOE ได้';$('volume').textContent=fmt(valid,0)+' / '+fmt(filtered.length,0);
+  $('volumeDetail').textContent='ขาดหรือไม่ถูกต้อง '+fmt(filtered.length-valid,0)+' รายการ · ยอดรวมเฉพาะข้อมูลที่คำนวณได้';
+ }
  if(active==='emission_factor'){
   $('metricLabel').textContent='จำนวน Emission Factor';
   $('sales').textContent=fmt(filtered.length,0);
@@ -143,6 +192,7 @@ function update(){
  if(active!=='emission_factor'){
   $('trendTitle').textContent=m.label+(active==='reserve'?'รายปี':'รายเดือน');
   $('trendCaption').textContent=m.unit+(m.method==='mean'?' · ค่าเฉลี่ยของรายการที่มีค่าในแต่ละเดือน':'');
+  if(m.method==='boe')$('trendCaption').textContent=m.unit+(active==='reserve'?' · ปริมาณสำรองแต่ละปี ไม่บวกยอดข้ามปี':' · ผลรวม BOE ในเดือน ÷ วันปฏิทินของเดือนนั้น');
   $('rankTitle').textContent=c.groupLabel+' 5 อันดับ';
   $('rankCaption').textContent=m.label+(multiReserve?' · โปรดเลือกปี':' · '+m.unit);
  }
@@ -150,7 +200,8 @@ function update(){
  let note='ค่าติดลบ '+negative+' รายการ · ค่าว่างแสดงเป็น —';
  if(!m.key && filtered.length)note+=' · เลือกผลิตภัณฑ์และหน่วยเดียวกันเพื่อดูตัวเลขปริมาณ';
  if(active==='sale'&&unique('currency').includes('ไม่ระบุ'))note+=' · ต้นทางไม่ได้ระบุสกุลเงิน';
- if(active==='production'||active==='supply')note+=' · อัตรารายวันใช้ค่าเฉลี่ยต่อรายการ ไม่ใช่ปริมาณรวมทั้งช่วงเวลา';
+ if(isVolume()&&!isBoe())note+=' · '+(active==='production'?'ปริมาณผลิตคูณด้วย production_days ของแต่ละรายการ':'ปริมาณจัดหาเป็นค่าประมาณจากอัตราเฉลี่ย × วันปฏิทินในแต่ละเดือน')+' · 1 bbl = 0.158987294928 m³; 1 MMSCF = 28,316.846592 Sm³ · Sm³ คือปริมาตรก๊าซมาตรฐานตามเงื่อนไขต้นทาง · ไม่รวมก๊าซกับของเหลวเป็นยอดเดียว และไม่ใช่พลังงานเทียบเท่า';
+ if(isBoe())note+=' · BOE เป็นค่าประมาณเทียบเท่าพลังงาน ไม่ใช่ปริมาตรจริง · ก๊าซ '+$('gasBoe').value+' BOE/MMSCF; คอนเดนเสท '+$('condBoe').value+' BOE/bbl (ค่าเริ่มต้นอนุมานจาก CSV การผลิต) · ผลิตใช้ oil_equivalent ต้นทางเมื่อมีค่า และคูณวันผลิตจริง · จัดหาคูณวันปฏิทิน · BOED = BOE รวม ÷ วันปฏิทินรวมของเดือนที่มีข้อมูล ไม่บวกอัตรารายวันข้ามเดือน · ช่วงเดือนที่ไม่มีข้อมูลทั้งชุดจะไม่อยู่ในตัวหาร และข้อมูลที่ขาดไม่แทนด้วยศูนย์';
  if(active==='emission_factor')note='ค่า Factor แสดงเป็น kgCO₂e ต่อหน่วยเชื้อเพลิง · ไม่ใช่ยอดปล่อยจริง · ต้องมีปริมาณเชื้อเพลิงที่ใช้และหน่วยตรงกันจึงคำนวณการปล่อยจริงได้';
  if(multiReserve)note+=' · ปริมาณสำรองแสดงแยกรายปี เลือกปีเดียวเพื่อจัดอันดับบล็อก';
  if(!datasets[active].rows.length)note=loadedAt?'ตารางนี้ยังไม่มีข้อมูลใน MySQL สามารถ export หัวคอลัมน์ CSV ได้':'ยังไม่ได้รับข้อมูลจาก MySQL';
@@ -158,13 +209,13 @@ function update(){
  $('notice').textContent=note;
  renderTable();renderBars(m,multiReserve);draw(m);
 }
-function numericValues(r){return config().columns.filter(([k])=>numeric.has(k)&&!['year','month'].includes(k)).map(([k])=>r[k]).filter(v=>v!==null&&v!==undefined)}
+function numericValues(r){return displayColumns().filter(([k])=>numeric.has(k)&&!['year','month'].includes(k)).map(([k])=>r[k]).filter(v=>v!==null&&v!==undefined)}
 function renderTable(){
- const cols=config().columns, pages=Math.max(1,Math.ceil(filtered.length/pageSize));page=Math.min(page,pages);
+ const cols=displayColumns(), pages=Math.max(1,Math.ceil(filtered.length/pageSize));page=Math.min(page,pages);
  $('headers').innerHTML=cols.map(([k,title])=>'<th class="'+(numeric.has(k)?'num':'')+'">'+esc(title)+'</th>').join('');
  $('body').innerHTML=filtered.length?filtered.slice((page-1)*pageSize,page*pageSize).map(r=>'<tr>'+cols.map(([k])=>{
   const v=r[k],n=numeric.has(k);
-  const text=k==='year'&&v!==null?String(v):n?fmt(v,k==='factor_value'?4:['month','production_days'].includes(k)?0:2):esc(v||'—');
+  const text=k==='year'&&v!==null?String(v):n?fmt(v,['mmboe','gas_boe_per_mmscf','condensate_boe_per_bbl'].includes(k)?6:k==='factor_value'?4:['month','production_days','volume_days'].includes(k)?0:2):esc(v||'—');
   return '<td class="'+(n?'num ':'')+(n&&v<0?'negative':'')+'">'+(k==='product_name'?'<span class="pill">'+text+'</span>':text)+'</td>';
  }).join('')+'</tr>').join(''):'<tr><td colspan="'+cols.length+'" class="empty">'+(datasets[active].rows.length?'ไม่พบข้อมูลตามตัวกรอง':'ยังไม่มีข้อมูลในชุดนี้ · นำเข้า CSV เพื่อเริ่มต้น')+'</td></tr>';
  $('page').textContent=page+' / '+pages;
@@ -186,7 +237,7 @@ function renderBars(m,disabled){
   $('bars').innerHTML=counts.length?counts.map(([name,count])=>'<div class="bar-row"><div class="bar-meta"><span title="'+esc(name)+'">'+esc(name)+'</span><span>'+fmt(count,0)+' Factor</span></div><div class="track"><div class="fill" style="width:'+count/maximum*100+'%"></div></div></div>').join(''):'<div class="empty">ไม่มีข้อมูลสำหรับจัดอันดับ</div>';
   return;
  }
- const top=[...grouped(filtered,config().group)].map(([name,r])=>[name,valueOf(r,m)]).filter(r=>r[1]!==null).sort((a,b)=>b[1]-a[1]).slice(0,5);
+ const top=[...grouped(filtered,config().group)].map(([name,r])=>[name,valueOf(r,m,filtered)]).filter(r=>r[1]!==null).sort((a,b)=>b[1]-a[1]).slice(0,5);
  const maximum=Math.max(1,...top.map(r=>Math.abs(r[1])));
  $('bars').innerHTML=top.length?top.map(([name,v])=>'<div class="bar-row"><div class="bar-meta"><span title="'+esc(name)+'">'+esc(name)+'</span><span>'+compact(v)+'</span></div><div class="track"><div class="fill" style="width:'+Math.abs(v)/maximum*100+'%;background:'+(v<0?'#b74f32':'#136c54')+'"></div></div></div>').join(''):'<div class="empty">ไม่มีข้อมูลสำหรับจัดอันดับ</div>';
 }
@@ -229,7 +280,9 @@ function draw(m=measure()){
  canvas.setAttribute('aria-label',m.label+' '+data.map(([k,v])=>k+' '+fmt(v)).join('; '));
 }
 function downloadCSV(rows,filename){
- const cols=config().columns.map(([k])=>k);
+ if(isBoe())rows=rows.map(r=>({...BoeMath.convert(r,active,$('gasBoe').value,$('condBoe').value),gas_boe_per_mmscf:$('gasBoe').value,condensate_boe_per_bbl:$('condBoe').value}));
+ else if(isVolume())rows=rows.map(r=>({...r,monthly_volume:r[volumeKey()],monthly_unit:volumeUnit(r.volume_family)}));
+ const cols=displayColumns().map(([k])=>k);
  const quote=(v,isNumeric=false)=>{
   let s=String(v??'');
   if(!isNumeric&&typeof v==='string'&&/^[=+\-@\t\r]/.test(s))s="'"+s;
@@ -246,6 +299,8 @@ $('reset').onclick=()=>{['year','month','product','unit','search'].forEach(id=>$
 $('prev').onclick=()=>{page--;renderTable()};$('next').onclick=()=>{page++;renderTable()};
 $('export').onclick=()=>downloadCSV(filtered,config().filename+'_filtered.csv');
 $('exportAll').onclick=()=>downloadCSV(datasets[active].rows,config().filename+'_all.csv');
+ ['volumeUnit','volumePhase'].forEach(id=>$(id).onchange=update);
+ ['gasBoe','condBoe'].forEach(id=>$(id).oninput=update);
 
 window.addEventListener('resize',()=>draw());
 async function refreshData(){
@@ -269,7 +324,7 @@ async function refreshData(){
       if(!Number.isFinite(result[key]))throw Error('พบค่าตัวเลขไม่ถูกต้องใน '+name);
      }
     }
-    return result;
+    return name==='production'||name==='supply'?VolumeMath.convert(result,name):result;
    })};
   }
   if(loadedAt)remember();

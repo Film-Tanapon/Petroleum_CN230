@@ -108,7 +108,12 @@ class Handler(BaseHTTPRequestHandler):
                 self.reply(503, body, 'application/json; charset=utf-8')
             return
         files = {'/': ('index.html', 'text/html'), '/index.html': ('index.html', 'text/html'),
-                 '/dashboard.js': ('dashboard.js', 'text/javascript')}
+                 '/dashboard.js': ('dashboard.js', 'text/javascript'),
+                 '/carbon': ('carbon.html', 'text/html'),
+                 '/carbon.js': ('carbon.js', 'text/javascript'),
+                 '/carbon-math.js': ('carbon-math.js', 'text/javascript')}
+        files['/volume-math.js'] = ('volume-math.js', 'text/javascript')
+        files['/boe-math.js'] = ('boe-math.js', 'text/javascript')
         if path not in files:
             self.reply(404, b'Not found', 'text/plain')
             return

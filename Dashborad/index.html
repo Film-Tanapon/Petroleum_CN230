@@ -43,7 +43,7 @@ canvas{display:block;width:100%;height:270px;padding:0}.bars{padding:24px 22px 2
 </head>
 <body>
 <header><div><div class="brand">PETROLEUM<span>.</span></div><small>CN230 · depresSQL</small></div>
-<div class="head-actions"><small>Data explorer</small><button class="primary" id="refresh">รีเฟรชจาก MySQL</button></div></header>
+<div class="head-actions"><small>Data explorer</small><a href="/carbon" style="color:#dbedb3;font-size:13px">ประมาณการคาร์บอน ↗</a><button class="primary" id="refresh">รีเฟรชจาก MySQL</button></div></header>
 <main>
 <div class="title-row"><div><div class="eyebrow">Petroleum data / Thailand</div><h1 id="viewTitle">ค่าปัจจัยการปล่อยคาร์บอน</h1><p id="viewSubtitle">ค่า Emission Factor ต่อหน่วยเชื้อเพลิง ไม่ใช่ปริมาณการปล่อยจริง</p></div><div class="source"><div class="status">กำลังเชื่อมต่อ MySQL</div><div id="source"></div><div id="range"></div></div></div>
 <nav class="view-tabs" aria-label="ประเภทข้อมูล"><button data-view="sale" aria-pressed="false">จำหน่าย<span>24,402</span></button><button data-view="production" aria-pressed="false">ผลิต<span>34,905</span></button><button data-view="supply" aria-pressed="false">จัดหา<span>573</span></button><button data-view="reserve" aria-pressed="false">สำรอง<span>0</span></button><button data-view="emission_factor" aria-pressed="false">คาร์บอน<span>0</span></button></nav><div class="notice" id="connection" role="status">กำลังโหลดข้อมูลจาก MySQL…</div><div class="filters">
@@ -52,6 +52,13 @@ canvas{display:block;width:100%;height:270px;padding:0}.bars{padding:24px 22px 2
 <div><label for="product">ผลิตภัณฑ์</label><select id="product"></select></div>
 <div><label id="unitLabel" for="unit">หน่วย</label><select id="unit"></select></div><div class="search-box"><label id="searchLabel" for="search">แหล่งผลิต</label><input type="search" id="search" placeholder="ค้นหาชื่อแหล่งผลิต เช่น นงเยาว์"></div>
 <button id="reset">ล้างตัวกรอง</button></div>
+<div id="volumeControls" class="filters" hidden style="grid-template-columns:1fr 1fr">
+<div><label for="volumeUnit">หน่วยปริมาณรวม</label><select id="volumeUnit"><option value="boe">BOED · บาร์เรลเทียบเท่าน้ำมันดิบต่อวัน</option><option value="metric">ของเหลว m³ / ก๊าซ Sm³</option><option value="native">ของเหลว bbl / ก๊าซ MMSCF</option></select></div>
+<div id="volumePhaseBox"><label for="volumePhase">ปริมาณที่แสดงในกราฟและอันดับ</label><select id="volumePhase"><option value="liquid">ของเหลว (น้ำมันดิบ + คอนเดนเสท)</option><option value="gas">ก๊าซธรรมชาติ</option></select></div></div>
+<div id="boeControls" class="filters" hidden style="grid-template-columns:1fr 1fr 2fr">
+<div><label for="gasBoe">ก๊าซ: BOE ต่อ 1 MMSCF</label><input id="gasBoe" type="number" value="174.4" min="0.000001" step="any" style="width:100%;padding:10px"></div>
+<div><label for="condBoe">คอนเดนเสท: BOE ต่อ 1 bbl</label><input id="condBoe" type="number" value="0.9096" min="0.000001" step="any" style="width:100%;padding:10px"></div>
+<p style="font-size:11px">ค่าเริ่มต้นอนุมานจากอัตราส่วนใน CSV การผลิต ใช้สำหรับจัดหา/สำรองและรายการผลิตที่ไม่มี oil_equivalent · การผลิตที่มีค่า oil_equivalent ใช้ค่าต้นทาง · ไม่ใช่อัตราแปลงสากล</p></div>
 <div class="cards">
 <div class="card feature"><div class="label" id="metricLabel">มูลค่าจำหน่ายรวม</div><div class="number" id="sales">—</div><div class="detail" id="moneyUnit">ตามหน่วยเงินต้นทาง</div></div>
 <div class="card"><div class="label" id="secondLabel">ค่าภาคหลวงรวม</div><div class="number" id="royalty">—</div><div class="detail" id="royaltyDetail"></div></div>
@@ -69,5 +76,5 @@ canvas{display:block;width:100%;height:270px;padding:0}.bars{padding:24px 22px 2
 </main>
 
 
-<script src="/dashboard.js"></script>
+<script src="/volume-math.js"></script><script src="/boe-math.js"></script><script src="/dashboard.js"></script>
 </body></html>

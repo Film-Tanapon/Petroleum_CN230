@@ -1,0 +1,18 @@
+{
+  "database": "petroleum",
+  "table": "Production_Monthly",
+  "reason": "User requested removal of suspected outlier shown in screenshot",
+  "backed_up_at": "2026-11-15T07:07:39.192544+00:00",
+  "record": {
+    "production_id": "PR32447",
+    "product_id": "P02",
+    "field_id": "F90",
+    "block_id": "B08",
+    "unit_id": "U02",
+    "quantity": "3500000.000000",
+    "oil_equivalent": "0.000611",
+    "production_days": 29,
+    "month": 2,
+    "year": 2020
+  }
+}

@@ -1,58 +1,64 @@
--- Reference schema for the SRS tests. Replace with the team's DDL to test it.
+-- Petroleum SRS sections 4.2-4.3; MySQL 8.0.16+ (enforced CHECK constraints).
+-- This file creates tables in the selected database; it does not migrate existing tables.
+-- Resolve document inconsistencies using section 4.2 for Supply_Monthly.area
+-- (VARCHAR(100), not a foreign key), and section 4.3.3 for Unit.unit_id.
+-- BR-01 (each Field has a production link to a Block) requires a post-import audit.
+-- BR-08 intentionally excludes currency: one price currency per grain.
+-- Nullable dates follow section 4.2; UNIQUE permits repeated grains containing NULL.
 
 CREATE TABLE `Product` (
-  `product_id` INT PRIMARY KEY,
-  `name` VARCHAR(120) NOT NULL
+  `product_id` VARCHAR(50) PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Field` (
-  `field_id` INT PRIMARY KEY,
-  `name` VARCHAR(120) NOT NULL
+  `field_id` VARCHAR(50) PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Block` (
-  `block_id` INT PRIMARY KEY,
-  `label` VARCHAR(120) NOT NULL
+  `block_id` VARCHAR(50) PRIMARY KEY,
+  `label` VARCHAR(50) NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Unit` (
-  `unit_id` INT PRIMARY KEY,
-  `symbol` VARCHAR(120) NOT NULL,
-  `description` VARCHAR(120) NOT NULL
+  `unit_id` VARCHAR(50) PRIMARY KEY,
+  `symbol` VARCHAR(20) NOT NULL,
+  `description` VARCHAR(100) NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Emission_Factor` (
-  `factor_id` INT PRIMARY KEY,
-  `product_id` INT NOT NULL,
-  `unit_id` INT NOT NULL,
-  `factor_value` DECIMAL(22,8) NULL,
-  `activity_type` VARCHAR(120) NOT NULL,
-  `basis` VARCHAR(120) NOT NULL,
+  `factor_id` VARCHAR(50) PRIMARY KEY,
+  `product_id` VARCHAR(50) NOT NULL,
+  `unit_id` VARCHAR(50) NOT NULL,
+  `factor_value` DECIMAL(10,6) NULL,
+  `activity_type` VARCHAR(100) NULL,
+  `basis` VARCHAR(100) NULL,
   FOREIGN KEY (`product_id`) REFERENCES `Product` (`product_id`),
   FOREIGN KEY (`unit_id`) REFERENCES `Unit` (`unit_id`),
   CHECK (factor_value >= 0)
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Supply_Monthly` (
-  `supply_id` INT PRIMARY KEY,
-  `product_id` INT NOT NULL,
-  `unit_id` INT NOT NULL,
-  `area` VARCHAR(120) NOT NULL,
-  `daily_rate` DECIMAL(22,8) NULL,
-  `month` INT NOT NULL,
-  `year` INT NOT NULL,
+  `supply_id` VARCHAR(50) PRIMARY KEY,
+  `product_id` VARCHAR(50) NOT NULL,
+  `unit_id` VARCHAR(50) NOT NULL,
+  `area` VARCHAR(100) NULL,
+  `daily_rate` DECIMAL(15,6) NULL,
+  `month` INT NULL,
+  `year` INT NULL,
   FOREIGN KEY (`product_id`) REFERENCES `Product` (`product_id`),
   FOREIGN KEY (`unit_id`) REFERENCES `Unit` (`unit_id`),
   CHECK (daily_rate >= 0)
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Reserve_Annual` (
-  `reserve_id` INT PRIMARY KEY,
-  `product_id` INT NOT NULL,
-  `block_id` INT NOT NULL,
-  `unit_id` INT NOT NULL,
-  `proven_reserves` DECIMAL(22,8) NULL,
-  `year` INT NOT NULL,
+  `reserve_id` VARCHAR(50) PRIMARY KEY,
+  `product_id` VARCHAR(50) NOT NULL,
+  `block_id` VARCHAR(50) NOT NULL,
+  `unit_id` VARCHAR(50) NOT NULL,
+  `proven_reserves` DECIMAL(18,6) NULL,
+  `year` INT NULL,
   FOREIGN KEY (`product_id`) REFERENCES `Product` (`product_id`),
   FOREIGN KEY (`block_id`) REFERENCES `Block` (`block_id`),
   FOREIGN KEY (`unit_id`) REFERENCES `Unit` (`unit_id`),
@@ -60,14 +66,14 @@ CREATE TABLE `Reserve_Annual` (
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Price_Monthly` (
-  `price_id` INT PRIMARY KEY,
-  `product_id` INT NOT NULL,
-  `field_id` INT NOT NULL,
-  `unit_id` INT NOT NULL,
-  `unit_price` DECIMAL(22,8) NULL,
-  `currency` VARCHAR(120) NOT NULL,
-  `month` INT NOT NULL,
-  `year` INT NOT NULL,
+  `price_id` VARCHAR(50) PRIMARY KEY,
+  `product_id` VARCHAR(50) NOT NULL,
+  `field_id` VARCHAR(50) NOT NULL,
+  `unit_id` VARCHAR(50) NOT NULL,
+  `unit_price` DECIMAL(12,6) NULL,
+  `currency` VARCHAR(10) NULL,
+  `month` INT NULL,
+  `year` INT NULL,
   FOREIGN KEY (`product_id`) REFERENCES `Product` (`product_id`),
   FOREIGN KEY (`field_id`) REFERENCES `Field` (`field_id`),
   FOREIGN KEY (`unit_id`) REFERENCES `Unit` (`unit_id`),
@@ -76,17 +82,17 @@ CREATE TABLE `Price_Monthly` (
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Sale` (
-  `sale_id` INT PRIMARY KEY,
-  `product_id` INT NOT NULL,
-  `field_id` INT NOT NULL,
-  `volume_bbl` DECIMAL(22,8) NULL,
-  `volume_mmscf` DECIMAL(22,8) NULL,
-  `energy_mmbtu` DECIMAL(22,8) NULL,
-  `sale_value` DECIMAL(22,8) NULL,
-  `royalty` DECIMAL(22,8) NULL,
-  `currency` VARCHAR(120) NOT NULL,
-  `month` INT NOT NULL,
-  `year` INT NOT NULL,
+  `sale_id` VARCHAR(50) PRIMARY KEY,
+  `product_id` VARCHAR(50) NOT NULL,
+  `field_id` VARCHAR(50) NOT NULL,
+  `volume_bbl` DECIMAL(15,6) NULL,
+  `volume_mmscf` DECIMAL(15,6) NULL,
+  `energy_mmbtu` DECIMAL(15,6) NULL,
+  `sale_value` DECIMAL(18,6) NULL,
+  `royalty` DECIMAL(15,6) NULL,
+  `currency` VARCHAR(10) NULL,
+  `month` INT NULL,
+  `year` INT NULL,
   FOREIGN KEY (`product_id`) REFERENCES `Product` (`product_id`),
   FOREIGN KEY (`field_id`) REFERENCES `Field` (`field_id`),
   CHECK (royalty >= 0),
@@ -96,16 +102,16 @@ CREATE TABLE `Sale` (
 ) ENGINE=InnoDB;
 
 CREATE TABLE `Production_Monthly` (
-  `production_id` INT PRIMARY KEY,
-  `product_id` INT NOT NULL,
-  `field_id` INT NULL,
-  `block_id` INT NULL,
-  `unit_id` INT NOT NULL,
-  `quantity` DECIMAL(22,8) NULL,
-  `oil_equivalent` DECIMAL(22,8) NULL,
-  `production_days` INT NOT NULL,
-  `year` INT NOT NULL,
-  `month` INT NOT NULL,
+  `production_id` VARCHAR(50) PRIMARY KEY,
+  `product_id` VARCHAR(50) NOT NULL,
+  `field_id` VARCHAR(50) NULL,
+  `block_id` VARCHAR(50) NULL,
+  `unit_id` VARCHAR(50) NOT NULL,
+  `quantity` DECIMAL(15,6) NULL,
+  `oil_equivalent` DECIMAL(15,6) NULL,
+  `production_days` INT NULL,
+  `month` INT NULL,
+  `year` INT NULL,
   FOREIGN KEY (`product_id`) REFERENCES `Product` (`product_id`),
   FOREIGN KEY (`field_id`) REFERENCES `Field` (`field_id`),
   FOREIGN KEY (`block_id`) REFERENCES `Block` (`block_id`),
