@@ -1,0 +1,1201 @@
+﻿source_file,sheet,row,product,block,unit,year,source_value,stored_value,note
+2025_p1-oil.xlsx,P1 Oil,2,PROD-CRUDE,15 16 north,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,3,PROD-CRUDE,16 south 17,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,4,PROD-CRUDE,10 11 12 13,MMbbl,2017,35.43281176568393,35.432812,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,5,PROD-CRUDE,10A,MMbbl,2017,0.9861272964525367,0.986127,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,6,PROD-CRUDE,11A,MMbbl,2017,0.05606924742893934,0.056069,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,7,PROD-CRUDE,14A*,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,8,PROD-CRUDE,15A*,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,9,PROD-CRUDE,16A*,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,10,PROD-CRUDE,9A,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,11,PROD-CRUDE,A-18,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,12,PROD-CRUDE,B12/27,MMbbl,2017,0.20047373916701908,0.200474,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,13,PROD-CRUDE,B-17-01,MMbbl,2017,0.13,0.130000,
+2025_p1-oil.xlsx,P1 Oil,14,PROD-CRUDE,B5/27,MMbbl,2017,14.8,14.800000,
+2025_p1-oil.xlsx,P1 Oil,15,PROD-CRUDE,B6/27,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,16,PROD-CRUDE,B8/32,MMbbl,2017,13.849349494064656,13.849349,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,17,PROD-CRUDE,B8/38,MMbbl,2017,21,21.000000,
+2025_p1-oil.xlsx,P1 Oil,18,PROD-CRUDE,E5,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,19,PROD-CRUDE,E5N*,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,20,PROD-CRUDE,EU1*,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,21,PROD-CRUDE,G1/48,MMbbl,2017,3.36,3.360000,
+2025_p1-oil.xlsx,P1 Oil,22,PROD-CRUDE,G10/48,MMbbl,2017,8.592,8.592000,
+2025_p1-oil.xlsx,P1 Oil,23,PROD-CRUDE,G11/48,MMbbl,2017,5.17,5.170000,
+2025_p1-oil.xlsx,P1 Oil,24,PROD-CRUDE,G4/43,MMbbl,2017,4.117130551621771,4.117131,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,25,PROD-CRUDE,G4/48,MMbbl,2017,0.07448254282386099,0.074483,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,26,PROD-CRUDE,G5/43,MMbbl,2017,0.97,0.970000,
+2025_p1-oil.xlsx,P1 Oil,27,PROD-CRUDE,G6/48,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,28,PROD-CRUDE,G7/50,MMbbl,2017,0.00034070416516552616,0.000341,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,29,PROD-CRUDE,G8/50,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,30,PROD-CRUDE,L1/64,MMbbl,2017,0.63,0.630000,
+2025_p1-oil.xlsx,P1 Oil,31,PROD-CRUDE,L10/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,32,PROD-CRUDE,L11/43,MMbbl,2017,0.249,0.249000,
+2025_p1-oil.xlsx,P1 Oil,33,PROD-CRUDE,L15/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,34,PROD-CRUDE,L21/43,MMbbl,2017,1.12218036818182,1.122180,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,35,PROD-CRUDE,L22/43,MMbbl,2017,0.0636,0.063600,
+2025_p1-oil.xlsx,P1 Oil,36,PROD-CRUDE,L27/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,37,PROD-CRUDE,L33/43,MMbbl,2017,0.750155628514732,0.750156,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,38,PROD-CRUDE,L44/43,MMbbl,2017,3.377034964246981,3.377035,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,39,PROD-CRUDE,L53/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,40,PROD-CRUDE,L53/48,MMbbl,2017,0.545,0.545000,
+2025_p1-oil.xlsx,P1 Oil,41,PROD-CRUDE,L54/43,MMbbl,2017,0.50479,0.504790,
+2025_p1-oil.xlsx,P1 Oil,42,PROD-CRUDE,PTTEP1,MMbbl,2017,0.48112,0.481120,
+2025_p1-oil.xlsx,P1 Oil,43,PROD-CRUDE,S1,MMbbl,2017,39.562934686154,39.562935,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,44,PROD-CRUDE,SW1,MMbbl,2017,0.38,0.380000,
+2025_p1-oil.xlsx,P1 Oil,45,PROD-CRUDE,15 16 north,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,46,PROD-CRUDE,16 south 17,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,47,PROD-CRUDE,10 11 12 13,MMbbl,2018,28.484743725151315,28.484744,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,48,PROD-CRUDE,10A,MMbbl,2018,1.2006376620709647,1.200638,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,49,PROD-CRUDE,11A,MMbbl,2018,0.028918155107411733,0.028918,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,50,PROD-CRUDE,14A*,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,51,PROD-CRUDE,15A*,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,52,PROD-CRUDE,16A*,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,53,PROD-CRUDE,9A,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,54,PROD-CRUDE,A-18,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,55,PROD-CRUDE,B12/27,MMbbl,2018,0.45841569237661894,0.458416,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,56,PROD-CRUDE,B-17-01,MMbbl,2018,0.25,0.250000,
+2025_p1-oil.xlsx,P1 Oil,57,PROD-CRUDE,B5/27,MMbbl,2018,9.63,9.630000,
+2025_p1-oil.xlsx,P1 Oil,58,PROD-CRUDE,B6/27,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,59,PROD-CRUDE,B8/32,MMbbl,2018,14.94758655834201,14.947587,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,60,PROD-CRUDE,B8/38,MMbbl,2018,16.69,16.690000,
+2025_p1-oil.xlsx,P1 Oil,61,PROD-CRUDE,E5,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,62,PROD-CRUDE,E5N*,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,63,PROD-CRUDE,EU1*,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,64,PROD-CRUDE,G1/48,MMbbl,2018,4.779,4.779000,
+2025_p1-oil.xlsx,P1 Oil,65,PROD-CRUDE,G10/48,MMbbl,2018,4.938972,4.938972,
+2025_p1-oil.xlsx,P1 Oil,66,PROD-CRUDE,G11/48,MMbbl,2018,5.005,5.005000,
+2025_p1-oil.xlsx,P1 Oil,67,PROD-CRUDE,G12/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,68,PROD-CRUDE,G4/43,MMbbl,2018,2.525418456375699,2.525418,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,69,PROD-CRUDE,G4/48,MMbbl,2018,0.1298145222324106,0.129815,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,70,PROD-CRUDE,G5/43,MMbbl,2018,0.836,0.836000,
+2025_p1-oil.xlsx,P1 Oil,71,PROD-CRUDE,G6/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,72,PROD-CRUDE,G7/50,MMbbl,2018,0.0007790752864634913,0.000779,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,73,PROD-CRUDE,G8/50,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,74,PROD-CRUDE,L1/64,MMbbl,2018,0.44,0.440000,
+2025_p1-oil.xlsx,P1 Oil,75,PROD-CRUDE,L10/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,76,PROD-CRUDE,L11/43,MMbbl,2018,0.138,0.138000,
+2025_p1-oil.xlsx,P1 Oil,77,PROD-CRUDE,L15/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,78,PROD-CRUDE,L21/43,MMbbl,2018,0.84,0.840000,
+2025_p1-oil.xlsx,P1 Oil,79,PROD-CRUDE,L22/43,MMbbl,2018,0.05574,0.055740,
+2025_p1-oil.xlsx,P1 Oil,80,PROD-CRUDE,L27/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,81,PROD-CRUDE,L33/43,MMbbl,2018,0.169,0.169000,
+2025_p1-oil.xlsx,P1 Oil,82,PROD-CRUDE,L44/43,MMbbl,2018,3.3489999999999998,3.349000,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,83,PROD-CRUDE,L53/43,MMbbl,2018,0.0443,0.044300,
+2025_p1-oil.xlsx,P1 Oil,84,PROD-CRUDE,L53/48,MMbbl,2018,0.901,0.901000,
+2025_p1-oil.xlsx,P1 Oil,85,PROD-CRUDE,L54/43,MMbbl,2018,0.4481112,0.448111,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,86,PROD-CRUDE,PTTEP1,MMbbl,2018,0.16151,0.161510,
+2025_p1-oil.xlsx,P1 Oil,87,PROD-CRUDE,S1,MMbbl,2018,40.098,40.098000,
+2025_p1-oil.xlsx,P1 Oil,88,PROD-CRUDE,SW1,MMbbl,2018,0.327521,0.327521,
+2025_p1-oil.xlsx,P1 Oil,89,PROD-CRUDE,15 16 north,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,90,PROD-CRUDE,16 south 17,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,91,PROD-CRUDE,10 11 12 13,MMbbl,2019,20.200348616589604,20.200349,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,92,PROD-CRUDE,10A,MMbbl,2019,1.266276595276756,1.266277,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,93,PROD-CRUDE,11A,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,94,PROD-CRUDE,14A*,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,95,PROD-CRUDE,15A*,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,96,PROD-CRUDE,16A*,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,97,PROD-CRUDE,9A,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,98,PROD-CRUDE,A-18,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,99,PROD-CRUDE,B12/27,MMbbl,2019,0.1372938724465029,0.137294,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,100,PROD-CRUDE,B-17-01,MMbbl,2019,0.25,0.250000,
+2025_p1-oil.xlsx,P1 Oil,101,PROD-CRUDE,B5/27,MMbbl,2019,11.684000000000001,11.684000,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,102,PROD-CRUDE,B6/27,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,103,PROD-CRUDE,B8/32,MMbbl,2019,10.965045210681792,10.965045,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,104,PROD-CRUDE,B8/38,MMbbl,2019,18.957,18.957000,
+2025_p1-oil.xlsx,P1 Oil,105,PROD-CRUDE,E5,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,106,PROD-CRUDE,E5N*,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,107,PROD-CRUDE,EU1*,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,108,PROD-CRUDE,G1/48,MMbbl,2019,4.035,4.035000,
+2025_p1-oil.xlsx,P1 Oil,109,PROD-CRUDE,G10/48,MMbbl,2019,3.716,3.716000,
+2025_p1-oil.xlsx,P1 Oil,110,PROD-CRUDE,G11/48,MMbbl,2019,9.011,9.011000,
+2025_p1-oil.xlsx,P1 Oil,111,PROD-CRUDE,G12/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,112,PROD-CRUDE,G4/43,MMbbl,2019,2.54411727689261,2.544117,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,113,PROD-CRUDE,G4/48,MMbbl,2019,0.0319865211557704,0.031987,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,114,PROD-CRUDE,G5/43,MMbbl,2019,0.312,0.312000,
+2025_p1-oil.xlsx,P1 Oil,115,PROD-CRUDE,G6/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,116,PROD-CRUDE,G7/50,MMbbl,2019,0.0002333302825027741,0.000233,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,117,PROD-CRUDE,G8/50,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,118,PROD-CRUDE,L1/64,MMbbl,2019,0.27,0.270000,
+2025_p1-oil.xlsx,P1 Oil,119,PROD-CRUDE,L10/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,120,PROD-CRUDE,L11/43,MMbbl,2019,0.019,0.019000,
+2025_p1-oil.xlsx,P1 Oil,121,PROD-CRUDE,L15/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,122,PROD-CRUDE,L21/43,MMbbl,2019,0.89,0.890000,
+2025_p1-oil.xlsx,P1 Oil,123,PROD-CRUDE,L22/43,MMbbl,2019,0.05574,0.055740,
+2025_p1-oil.xlsx,P1 Oil,124,PROD-CRUDE,L27/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,125,PROD-CRUDE,L33/43,MMbbl,2019,0.027,0.027000,
+2025_p1-oil.xlsx,P1 Oil,126,PROD-CRUDE,L44/43,MMbbl,2019,1.7767929999999998,1.776793,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,127,PROD-CRUDE,L53/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,128,PROD-CRUDE,L53/48,MMbbl,2019,1.192,1.192000,
+2025_p1-oil.xlsx,P1 Oil,129,PROD-CRUDE,L54/43,MMbbl,2019,0.41975,0.419750,
+2025_p1-oil.xlsx,P1 Oil,130,PROD-CRUDE,PTTEP1,MMbbl,2019,0.113476,0.113476,
+2025_p1-oil.xlsx,P1 Oil,131,PROD-CRUDE,S1,MMbbl,2019,37.225,37.225000,
+2025_p1-oil.xlsx,P1 Oil,132,PROD-CRUDE,SW1,MMbbl,2019,0.438856,0.438856,
+2025_p1-oil.xlsx,P1 Oil,133,PROD-CRUDE,15 16 north,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,134,PROD-CRUDE,16 south 17,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,135,PROD-CRUDE,10 11 12 13,MMbbl,2020,13.791588031775667,13.791588,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,136,PROD-CRUDE,10A,MMbbl,2020,0.6118312951160682,0.611831,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,137,PROD-CRUDE,11A,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,138,PROD-CRUDE,14A*,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,139,PROD-CRUDE,15A*,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,140,PROD-CRUDE,16A*,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,141,PROD-CRUDE,9A,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,142,PROD-CRUDE,A-18,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,143,PROD-CRUDE,B12/27,MMbbl,2020,0.3380009270827274,0.338001,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,144,PROD-CRUDE,B-17-01,MMbbl,2020,0.49,0.490000,
+2025_p1-oil.xlsx,P1 Oil,145,PROD-CRUDE,B5/27,MMbbl,2020,7.65,7.650000,
+2025_p1-oil.xlsx,P1 Oil,146,PROD-CRUDE,B6/27,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,147,PROD-CRUDE,B8/32,MMbbl,2020,9.740000000000002,9.740000,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,148,PROD-CRUDE,B8/38,MMbbl,2020,8.356,8.356000,
+2025_p1-oil.xlsx,P1 Oil,149,PROD-CRUDE,E5,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,150,PROD-CRUDE,E5N*,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,151,PROD-CRUDE,EU1*,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,152,PROD-CRUDE,G1/48,MMbbl,2020,2.21,2.210000,
+2025_p1-oil.xlsx,P1 Oil,153,PROD-CRUDE,G10/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,154,PROD-CRUDE,G11/48,MMbbl,2020,6.16,6.160000,
+2025_p1-oil.xlsx,P1 Oil,155,PROD-CRUDE,G12/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,156,PROD-CRUDE,G4/43,MMbbl,2020,1.9100000000000001,1.910000,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,157,PROD-CRUDE,G4/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,158,PROD-CRUDE,G5/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,159,PROD-CRUDE,G6/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,160,PROD-CRUDE,G7/50,MMbbl,2020,0.0005744309661972914,0.000574,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,161,PROD-CRUDE,G8/50,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,162,PROD-CRUDE,L1/64,MMbbl,2020,0.043882769999999995,0.043883,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,163,PROD-CRUDE,L10/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,164,PROD-CRUDE,L11/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,165,PROD-CRUDE,L15/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,166,PROD-CRUDE,L21/43,MMbbl,2020,1.58591,1.585910,
+2025_p1-oil.xlsx,P1 Oil,167,PROD-CRUDE,L22/43,MMbbl,2020,0.05574,0.055740,
+2025_p1-oil.xlsx,P1 Oil,168,PROD-CRUDE,L27/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,169,PROD-CRUDE,L33/43,MMbbl,2020,0.045,0.045000,
+2025_p1-oil.xlsx,P1 Oil,170,PROD-CRUDE,L44/43,MMbbl,2020,3.768279,3.768279,
+2025_p1-oil.xlsx,P1 Oil,171,PROD-CRUDE,L53/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,172,PROD-CRUDE,L53/48,MMbbl,2020,2.836,2.836000,
+2025_p1-oil.xlsx,P1 Oil,173,PROD-CRUDE,L54/43,MMbbl,2020,0.39119,0.391190,
+2025_p1-oil.xlsx,P1 Oil,174,PROD-CRUDE,PTTEP1,MMbbl,2020,0.05371,0.053710,
+2025_p1-oil.xlsx,P1 Oil,175,PROD-CRUDE,S1,MMbbl,2020,31.978915019299997,31.978915,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,176,PROD-CRUDE,SW1,MMbbl,2020,0.423,0.423000,
+2025_p1-oil.xlsx,P1 Oil,177,PROD-CRUDE,15 16 north,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,178,PROD-CRUDE,16 south 17,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,179,PROD-CRUDE,10 11 12 13,MMbbl,2021,9.0493059115808,9.049306,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,180,PROD-CRUDE,10A,MMbbl,2021,0.25976309789900154,0.259763,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,181,PROD-CRUDE,11A,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,182,PROD-CRUDE,14A*,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,183,PROD-CRUDE,15A*,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,184,PROD-CRUDE,16A*,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,185,PROD-CRUDE,9A,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,186,PROD-CRUDE,A-18,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,187,PROD-CRUDE,B12/27*,MMbbl,2021,0.3195830937141756,0.319583,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,188,PROD-CRUDE,B-17-01,MMbbl,2021,0.5700000000000001,0.570000,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,189,PROD-CRUDE,B5/27,MMbbl,2021,7.683000000000001,7.683000,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,190,PROD-CRUDE,B6/27,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,191,PROD-CRUDE,B8/32,MMbbl,2021,10.452088482956903,10.452088,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,192,PROD-CRUDE,B8/38,MMbbl,2021,9.024,9.024000,
+2025_p1-oil.xlsx,P1 Oil,193,PROD-CRUDE,E5,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,194,PROD-CRUDE,E5N*,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,195,PROD-CRUDE,EU1*,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,196,PROD-CRUDE,G1/48,MMbbl,2021,1.786,1.786000,
+2025_p1-oil.xlsx,P1 Oil,197,PROD-CRUDE,G10/48,MMbbl,2021,5.566,5.566000,
+2025_p1-oil.xlsx,P1 Oil,198,PROD-CRUDE,G11/48,MMbbl,2021,10.386,10.386000,
+2025_p1-oil.xlsx,P1 Oil,199,PROD-CRUDE,G12/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,200,PROD-CRUDE,G4/43,MMbbl,2021,2.201707162967189,2.201707,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,201,PROD-CRUDE,G4/48,MMbbl,2021,0.003299930790173,0.003300,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,202,PROD-CRUDE,G5/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,203,PROD-CRUDE,G6/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,204,PROD-CRUDE,G7/50*,MMbbl,2021,0.0005431299460833184,0.000543,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,205,PROD-CRUDE,G8/50,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,206,PROD-CRUDE,L1/64,MMbbl,2021,2.25457043795313,2.254570,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,207,PROD-CRUDE,L10/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,208,PROD-CRUDE,L11/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,209,PROD-CRUDE,L15/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,210,PROD-CRUDE,L21/43,MMbbl,2021,1.29843730597225,1.298437,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,211,PROD-CRUDE,L22/43,MMbbl,2021,0.0557448844496424,0.055745,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,212,PROD-CRUDE,L27/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,213,PROD-CRUDE,L33/43,MMbbl,2021,0.031,0.031000,
+2025_p1-oil.xlsx,P1 Oil,214,PROD-CRUDE,L44/43,MMbbl,2021,3.813,3.813000,
+2025_p1-oil.xlsx,P1 Oil,215,PROD-CRUDE,L53/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,216,PROD-CRUDE,L53/48,MMbbl,2021,3.079,3.079000,
+2025_p1-oil.xlsx,P1 Oil,217,PROD-CRUDE,L54/43,MMbbl,2021,0.425332864885741,0.425333,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,218,PROD-CRUDE,PTTEP1,MMbbl,2021,0.1572628362116495,0.157263,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,219,PROD-CRUDE,S1,MMbbl,2021,25.9194681192987,25.919468,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,220,PROD-CRUDE,SW1,MMbbl,2021,0.335,0.335000,
+2025_p1-oil.xlsx,P1 Oil,221,PROD-CRUDE,15,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,222,PROD-CRUDE,16,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,223,PROD-CRUDE,17,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,224,PROD-CRUDE,10 11 12 13,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,225,PROD-CRUDE,10A,MMbbl,2022,0.088686599,0.088687,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,226,PROD-CRUDE,11A,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,227,PROD-CRUDE,14A,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,228,PROD-CRUDE,15A,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,229,PROD-CRUDE,16A,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,230,PROD-CRUDE,9A,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,231,PROD-CRUDE,A-18,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,232,PROD-CRUDE,B12/27,MMbbl,2022,0.27723815900000004,0.277238,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,233,PROD-CRUDE,B-17-01,MMbbl,2022,1.16,1.160000,
+2025_p1-oil.xlsx,P1 Oil,234,PROD-CRUDE,B5/27,MMbbl,2022,7.443,7.443000,
+2025_p1-oil.xlsx,P1 Oil,235,PROD-CRUDE,B6/27,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,236,PROD-CRUDE,B8/32,MMbbl,2022,8.750634334250998,8.750634,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,237,PROD-CRUDE,B8/38,MMbbl,2022,9.088,9.088000,
+2025_p1-oil.xlsx,P1 Oil,238,PROD-CRUDE,E5,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,239,PROD-CRUDE,E5N,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,240,PROD-CRUDE,EU1,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,241,PROD-CRUDE,G1/48,MMbbl,2022,1.824,1.824000,
+2025_p1-oil.xlsx,P1 Oil,242,PROD-CRUDE,G1/61,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,243,PROD-CRUDE,G10/48,MMbbl,2022,4.265,4.265000,
+2025_p1-oil.xlsx,P1 Oil,244,PROD-CRUDE,G11/48,MMbbl,2022,9.706,9.706000,
+2025_p1-oil.xlsx,P1 Oil,245,PROD-CRUDE,G12/48,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,246,PROD-CRUDE,G2/61,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,247,PROD-CRUDE,G4/43,MMbbl,2022,1.707488660899212,1.707489,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,248,PROD-CRUDE,G4/48,MMbbl,2022,0.004396227,0.004396,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,249,PROD-CRUDE,G5/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,250,PROD-CRUDE,G6/48,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,251,PROD-CRUDE,G7/50,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,252,PROD-CRUDE,G8/50,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,253,PROD-CRUDE,L1/64,MMbbl,2022,0.69,0.690000,
+2025_p1-oil.xlsx,P1 Oil,254,PROD-CRUDE,L10/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,255,PROD-CRUDE,L11/43,MMbbl,2022,0.019,0.019000,
+2025_p1-oil.xlsx,P1 Oil,256,PROD-CRUDE,L15/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,257,PROD-CRUDE,L21/43,MMbbl,2022,2.77,2.770000,
+2025_p1-oil.xlsx,P1 Oil,258,PROD-CRUDE,L22/43,MMbbl,2022,0.055740000000000005,0.055740,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,259,PROD-CRUDE,L27/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,260,PROD-CRUDE,L33/43,MMbbl,2022,0.027756,0.027756,
+2025_p1-oil.xlsx,P1 Oil,261,PROD-CRUDE,L44/43,MMbbl,2022,3.388391,3.388391,
+2025_p1-oil.xlsx,P1 Oil,262,PROD-CRUDE,L53/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,263,PROD-CRUDE,L53/48,MMbbl,2022,2.302,2.302000,
+2025_p1-oil.xlsx,P1 Oil,264,PROD-CRUDE,L54/43,MMbbl,2022,0.607377415010984,0.607377,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,265,PROD-CRUDE,NC,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,266,PROD-CRUDE,PTTEP1,MMbbl,2022,0.150706005633482,0.150706,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,267,PROD-CRUDE,S1,MMbbl,2022,21.11546,21.115460,
+2025_p1-oil.xlsx,P1 Oil,268,PROD-CRUDE,SW1,MMbbl,2022,0.132148,0.132148,
+2025_p1-oil.xlsx,P1 Oil,269,PROD-CRUDE,B10 B11 B12 B13,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,270,PROD-CRUDE,B10A B11A,MMbbl,2023,0.07850446400000001,0.078504,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,271,PROD-CRUDE,B12/27,MMbbl,2023,0.43840106500000003,0.438401,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,272,PROD-CRUDE,G7/50,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,273,PROD-CRUDE,G4/48,MMbbl,2023,0.007324090000000001,0.007324,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,274,PROD-CRUDE,B9A,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,275,PROD-CRUDE,B8/32,MMbbl,2023,9.57925067038868,9.579251,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,276,PROD-CRUDE,G4/43,MMbbl,2023,3.604536975,3.604537,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,277,PROD-CRUDE,B14A,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,278,PROD-CRUDE,B15A,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,279,PROD-CRUDE,B16A,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,280,PROD-CRUDE,G8/50,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,281,PROD-CRUDE,B15,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,282,PROD-CRUDE,B16 (North),MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,283,PROD-CRUDE,B16 (South),MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,284,PROD-CRUDE,B17,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,285,PROD-CRUDE,G12/48,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,286,PROD-CRUDE,B6/27,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,287,PROD-CRUDE,B5/27,MMbbl,2023,6.159,6.159000,
+2025_p1-oil.xlsx,P1 Oil,288,PROD-CRUDE,G1/48,MMbbl,2023,2.485,2.485000,
+2025_p1-oil.xlsx,P1 Oil,289,PROD-CRUDE,G11/48,MMbbl,2023,11.072,11.072000,
+2025_p1-oil.xlsx,P1 Oil,290,PROD-CRUDE,B8/38,MMbbl,2023,8.87849494711901,8.878495,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,291,PROD-CRUDE,G10/48,MMbbl,2023,11.345,11.345000,
+2025_p1-oil.xlsx,P1 Oil,292,PROD-CRUDE,G6/48,MMbbl,2023,9.346765312587841,9.346765,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,293,PROD-CRUDE,G1/61,MMbbl,2023,9.490182888823774,9.490183,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,294,PROD-CRUDE,G2/61,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,295,PROD-CRUDE,A-18,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,296,PROD-CRUDE,B-17-01,MMbbl,2023,0.57,0.570000,
+2025_p1-oil.xlsx,P1 Oil,297,PROD-CRUDE,E5,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,298,PROD-CRUDE,EU1,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,299,PROD-CRUDE,E5N,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,300,PROD-CRUDE,L27/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,301,PROD-CRUDE,L33/43,MMbbl,2023,0.057398000000000005,0.057398,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,302,PROD-CRUDE,L44/43,MMbbl,2023,3.5788529999999996,3.578853,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,303,PROD-CRUDE,SW1,MMbbl,2023,0.10109,0.101090,
+2025_p1-oil.xlsx,P1 Oil,304,PROD-CRUDE,L53/48,MMbbl,2023,2.0398708,2.039871,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,305,PROD-CRUDE,L22/43,MMbbl,2023,0.0072152494130573,0.007215,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,306,PROD-CRUDE,L53/43,MMbbl,2023,0,0.000000,
+2025_p1-oil.xlsx,P1 Oil,307,PROD-CRUDE,L54/43,MMbbl,2023,0.638075433482629,0.638075,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,308,PROD-CRUDE,PTTEP1,MMbbl,2023,0.059036715299243,0.059037,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,309,PROD-CRUDE,L1/64,MMbbl,2023,2.82697,2.826970,
+2025_p1-oil.xlsx,P1 Oil,310,PROD-CRUDE,L21/43,MMbbl,2023,8.29397,8.293970,
+2025_p1-oil.xlsx,P1 Oil,311,PROD-CRUDE,S1,MMbbl,2023,21.269527752358,21.269528,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,312,PROD-CRUDE,L10/43,MMbbl,2023,0.01432,0.014320,
+2025_p1-oil.xlsx,P1 Oil,313,PROD-CRUDE,L11/43,MMbbl,2023,0.05047,0.050470,
+2025_p1-oil.xlsx,P1 Oil,314,PROD-CRUDE,B10A B11A,MMbbl,2024,0.024922395,0.024922,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,315,PROD-CRUDE,B12/27,MMbbl,2024,0.49850920299999996,0.498509,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,316,PROD-CRUDE,G7/50,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,317,PROD-CRUDE,G4/48,MMbbl,2024,0.018883706,0.018884,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,318,PROD-CRUDE,B9A,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,319,PROD-CRUDE,B8/32,MMbbl,2024,10.133450392716464,10.133450,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,320,PROD-CRUDE,G4/43,MMbbl,2024,7.01874292175299,7.018743,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,321,PROD-CRUDE,B14A,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,322,PROD-CRUDE,B15A,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,323,PROD-CRUDE,B16A,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,324,PROD-CRUDE,G8/50,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,325,PROD-CRUDE,G12/48,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,326,PROD-CRUDE,B5/27,MMbbl,2024,10.19933,10.199330,
+2025_p1-oil.xlsx,P1 Oil,327,PROD-CRUDE,G1/48,MMbbl,2024,3.584,3.584000,
+2025_p1-oil.xlsx,P1 Oil,328,PROD-CRUDE,G11/48,MMbbl,2024,11.502,11.502000,
+2025_p1-oil.xlsx,P1 Oil,329,PROD-CRUDE,B8/38,MMbbl,2024,9.967,9.967000,
+2025_p1-oil.xlsx,P1 Oil,330,PROD-CRUDE,G10/48,MMbbl,2024,8.626,8.626000,
+2025_p1-oil.xlsx,P1 Oil,331,PROD-CRUDE,G6/48,MMbbl,2024,5.4180492929193855,5.418049,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,332,PROD-CRUDE,G1/61,MMbbl,2024,11.53493065808335,11.534931,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,333,PROD-CRUDE,G2/61,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,334,PROD-CRUDE,A-18,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,335,PROD-CRUDE,B-17-01,MMbbl,2024,1.03,1.030000,
+2025_p1-oil.xlsx,P1 Oil,336,PROD-CRUDE,E5,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,337,PROD-CRUDE,EU1,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,338,PROD-CRUDE,E5N,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,339,PROD-CRUDE,L27/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,340,PROD-CRUDE,L33/43,MMbbl,2024,0.009965,0.009965,
+2025_p1-oil.xlsx,P1 Oil,341,PROD-CRUDE,L44/43,MMbbl,2024,3.17,3.170000,
+2025_p1-oil.xlsx,P1 Oil,342,PROD-CRUDE,SW1,MMbbl,2024,0.30141,0.301410,
+2025_p1-oil.xlsx,P1 Oil,343,PROD-CRUDE,L53/48,MMbbl,2024,2.855914463333331,2.855914,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,344,PROD-CRUDE,L22/43,MMbbl,2024,0.01182260854332328,0.011823,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,345,PROD-CRUDE,L53/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,346,PROD-CRUDE,L54/43,MMbbl,2024,0.5727599058117078,0.572760,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,347,PROD-CRUDE,PTTEP1,MMbbl,2024,0.0473141427369768,0.047314,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,348,PROD-CRUDE,L1/64,MMbbl,2024,2.673,2.673000,
+2025_p1-oil.xlsx,P1 Oil,349,PROD-CRUDE,L21/43,MMbbl,2024,8.15154,8.151540,
+2025_p1-oil.xlsx,P1 Oil,350,PROD-CRUDE,S1,MMbbl,2024,23.53314780077256,23.533148,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,351,PROD-CRUDE,L10/43,MMbbl,2024,0.0088,0.008800,
+2025_p1-oil.xlsx,P1 Oil,352,PROD-CRUDE,L11/43,MMbbl,2024,0.04903,0.049030,
+2025_p1-oil.xlsx,P1 Oil,353,PROD-CRUDE,G5/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,354,PROD-CRUDE,B10 B11 B12 B13,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,355,PROD-CRUDE,B15,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,356,PROD-CRUDE,B16 (North),MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,357,PROD-CRUDE,B16 (South),MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,358,PROD-CRUDE,B17,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,359,PROD-CRUDE,B6/27,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,360,PROD-CRUDE,NC,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,361,PROD-CRUDE,L15/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,362,PROD-CRUDE,B10A B11A,MMbbl,2025,0.029554845,0.029555,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,363,PROD-CRUDE,B12/27,MMbbl,2025,0.333944745,0.333945,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,364,PROD-CRUDE,G7/50,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,365,PROD-CRUDE,G4/48,MMbbl,2025,0.021001154,0.021001,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,366,PROD-CRUDE,B9A,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,367,PROD-CRUDE,B8/32,MMbbl,2025,10.513,10.513000,
+2025_p1-oil.xlsx,P1 Oil,368,PROD-CRUDE,G4/43,MMbbl,2025,7.2814,7.281400,
+2025_p1-oil.xlsx,P1 Oil,369,PROD-CRUDE,B14A,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,370,PROD-CRUDE,B15A,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,371,PROD-CRUDE,B16A,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,372,PROD-CRUDE,G8/50,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,373,PROD-CRUDE,G12/48,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,374,PROD-CRUDE,B5/27,MMbbl,2025,11.179,11.179000,
+2025_p1-oil.xlsx,P1 Oil,375,PROD-CRUDE,G1/48,MMbbl,2025,3.419,3.419000,
+2025_p1-oil.xlsx,P1 Oil,376,PROD-CRUDE,G11/48,MMbbl,2025,9.602,9.602000,
+2025_p1-oil.xlsx,P1 Oil,377,PROD-CRUDE,B8/38,MMbbl,2025,8.824,8.824000,
+2025_p1-oil.xlsx,P1 Oil,378,PROD-CRUDE,G10/48,MMbbl,2025,15.086,15.086000,
+2025_p1-oil.xlsx,P1 Oil,379,PROD-CRUDE,G6/48,MMbbl,2025,11.30838,11.308380,
+2025_p1-oil.xlsx,P1 Oil,380,PROD-CRUDE,G1/61,MMbbl,2025,15.998604858797371,15.998605,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,381,PROD-CRUDE,G2/61,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,382,PROD-CRUDE,G3/65,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,383,PROD-CRUDE,A-18,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,384,PROD-CRUDE,B-17-01,MMbbl,2025,1.51,1.510000,
+2025_p1-oil.xlsx,P1 Oil,385,PROD-CRUDE,E5,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,386,PROD-CRUDE,EU1,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,387,PROD-CRUDE,E5N,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,388,PROD-CRUDE,L27/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,389,PROD-CRUDE,L33/43,MMbbl,2025,0.008842328267445581,0.008842,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: =8.84232826744558/1000
+2025_p1-oil.xlsx,P1 Oil,390,PROD-CRUDE,L44/43,MMbbl,2025,2.10801001872052,2.108010,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: =2108.01001872052/1000
+2025_p1-oil.xlsx,P1 Oil,391,PROD-CRUDE,SW1,MMbbl,2025,0.013699,0.013699,cached Excel formula result; not recalculated: =13.699/1000
+2025_p1-oil.xlsx,P1 Oil,392,PROD-CRUDE,L53/48,MMbbl,2025,2.5189297933333474,2.518930,rounded HALF_UP to 6 decimals
+2025_p1-oil.xlsx,P1 Oil,393,PROD-CRUDE,L22/43,MMbbl,2025,0.0067314446222751295,0.006731,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: =6.73144462227513/1000
+2025_p1-oil.xlsx,P1 Oil,394,PROD-CRUDE,L53/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-oil.xlsx,P1 Oil,395,PROD-CRUDE,L54/43,MMbbl,2025,0.490867856710934,0.490868,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: =490.867856710934/1000
+2025_p1-oil.xlsx,P1 Oil,396,PROD-CRUDE,PTTEP1,MMbbl,2025,0.0288958854749634,0.028896,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: =28.8958854749634/1000
+2025_p1-oil.xlsx,P1 Oil,397,PROD-CRUDE,L1/64,MMbbl,2025,2.50091,2.500910,
+2025_p1-oil.xlsx,P1 Oil,398,PROD-CRUDE,L21/43,MMbbl,2025,8.27078,8.270780,
+2025_p1-oil.xlsx,P1 Oil,399,PROD-CRUDE,S1,MMbbl,2025,23.106272372086604,23.106272,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: ='[1]DMF 1_1'!$D$13/1000
+2025_p1-oil.xlsx,P1 Oil,400,PROD-CRUDE,L10/43,MMbbl,2025,0.01032,0.010320,
+2025_p1-oil.xlsx,P1 Oil,401,PROD-CRUDE,L11/43,MMbbl,2025,0.07596,0.075960,
+2025_p1-gas.xlsx,P1 Gas,2,PROD-NG,15 16 north,Bcf,2017,706.0831055549053,706.083106,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,3,PROD-NG,16 south 17,Bcf,2017,554.8879999999999,554.888000,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,4,PROD-NG,10 11 12 13,Bcf,2017,2314.327473338301,2314.327473,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,5,PROD-NG,10A,Bcf,2017,20.736221201104556,20.736221,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,6,PROD-NG,11A,Bcf,2017,32.74414003714168,32.744140,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,7,PROD-NG,14A*,Bcf,2017,61.30239332832088,61.302393,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,8,PROD-NG,15A*,Bcf,2017,209.97098233486474,209.970982,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,9,PROD-NG,16A*,Bcf,2017,113.31662433681437,113.316624,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,10,PROD-NG,9A,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,11,PROD-NG,A-18,Bcf,2017,860,860.000000,
+2025_p1-gas.xlsx,P1 Gas,12,PROD-NG,B12/27,Bcf,2017,920.0429048350677,920.042905,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,13,PROD-NG,B-17-01,Bcf,2017,319,319.000000,
+2025_p1-gas.xlsx,P1 Gas,14,PROD-NG,B5/27,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,15,PROD-NG,B6/27,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,16,PROD-NG,B8/32,Bcf,2017,107.27576383002683,107.275764,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,17,PROD-NG,B8/38,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,18,PROD-NG,E5,Bcf,2017,6,6.000000,
+2025_p1-gas.xlsx,P1 Gas,19,PROD-NG,E5N*,Bcf,2017,14.42473508399263,14.424735,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,20,PROD-NG,EU1*,Bcf,2017,57.69526491600737,57.695265,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,21,PROD-NG,G1/48,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,22,PROD-NG,G10/48,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,23,PROD-NG,G11/48,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,24,PROD-NG,G4/43,Bcf,2017,2.273714540877653,2.273715,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,25,PROD-NG,G4/48,Bcf,2017,1.4049990617851,1.404999,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,26,PROD-NG,G5/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,27,PROD-NG,G6/48,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,28,PROD-NG,G7/50,Bcf,2017,1.5636085360145098,1.563609,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,29,PROD-NG,G8/50,Bcf,2017,0.37,0.370000,
+2025_p1-gas.xlsx,P1 Gas,30,PROD-NG,L1/64,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,31,PROD-NG,L10/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,32,PROD-NG,L11/43,Bcf,2017,0.236,0.236000,
+2025_p1-gas.xlsx,P1 Gas,33,PROD-NG,L15/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,34,PROD-NG,L21/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,35,PROD-NG,L22/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,36,PROD-NG,L27/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,37,PROD-NG,L33/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,38,PROD-NG,L44/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,39,PROD-NG,L53/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,40,PROD-NG,L53/48,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,41,PROD-NG,L54/43,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,42,PROD-NG,PTTEP1,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,43,PROD-NG,S1,Bcf,2017,106.45977588385838,106.459776,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,44,PROD-NG,SW1,Bcf,2017,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,45,PROD-NG,15 16 north,Bcf,2018,534.73,534.730000,
+2025_p1-gas.xlsx,P1 Gas,46,PROD-NG,16 south 17,Bcf,2018,454.55,454.550000,
+2025_p1-gas.xlsx,P1 Gas,47,PROD-NG,10 11 12 13,Bcf,2018,2008.5473209466386,2008.547321,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,48,PROD-NG,10A,Bcf,2018,24.238487218532924,24.238487,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,49,PROD-NG,11A,Bcf,2018,13.777771311680207,13.777771,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,50,PROD-NG,14A*,Bcf,2018,106.49455785793823,106.494558,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,51,PROD-NG,15A*,Bcf,2018,364.7617280941951,364.761728,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,52,PROD-NG,16A*,Bcf,2018,196.8537140478667,196.853714,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,53,PROD-NG,9A,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,54,PROD-NG,A-18,Bcf,2018,840,840.000000,
+2025_p1-gas.xlsx,P1 Gas,55,PROD-NG,B12/27,Bcf,2018,895.553830393492,895.553830,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,56,PROD-NG,B-17-01,Bcf,2018,351,351.000000,
+2025_p1-gas.xlsx,P1 Gas,57,PROD-NG,B5/27,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,58,PROD-NG,B6/27,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,59,PROD-NG,B8/32,Bcf,2018,91.32804675808751,91.328047,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,60,PROD-NG,B8/38,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,61,PROD-NG,E5,Bcf,2018,5.9,5.900000,
+2025_p1-gas.xlsx,P1 Gas,62,PROD-NG,E5N*,Bcf,2018,17.09887135788311,17.098871,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,63,PROD-NG,EU1*,Bcf,2018,68.39112864211688,68.391129,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,64,PROD-NG,G1/48,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,65,PROD-NG,G10/48,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,66,PROD-NG,G11/48,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,67,PROD-NG,G12/48,Bcf,2018,17.04,17.040000,
+2025_p1-gas.xlsx,P1 Gas,68,PROD-NG,G4/43,Bcf,2018,1.7109880015733852,1.710988,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,69,PROD-NG,G4/48,Bcf,2018,0.5841001476559,0.584100,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,70,PROD-NG,G5/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,71,PROD-NG,G6/48,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,72,PROD-NG,G7/50,Bcf,2018,1.5219894706049388,1.521989,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,73,PROD-NG,G8/50,Bcf,2018,2.15,2.150000,
+2025_p1-gas.xlsx,P1 Gas,74,PROD-NG,L1/64,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,75,PROD-NG,L10/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,76,PROD-NG,L11/43,Bcf,2018,0.131,0.131000,
+2025_p1-gas.xlsx,P1 Gas,77,PROD-NG,L15/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,78,PROD-NG,L21/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,79,PROD-NG,L22/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,80,PROD-NG,L27/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,81,PROD-NG,L33/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,82,PROD-NG,L44/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,83,PROD-NG,L53/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,84,PROD-NG,L53/48,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,85,PROD-NG,L54/43,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,86,PROD-NG,PTTEP1,Bcf,2018,0.005117,0.005117,
+2025_p1-gas.xlsx,P1 Gas,87,PROD-NG,S1,Bcf,2018,61.56,61.560000,
+2025_p1-gas.xlsx,P1 Gas,88,PROD-NG,SW1,Bcf,2018,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,89,PROD-NG,15 16 north,Bcf,2019,372.349612735064,372.349613,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,90,PROD-NG,16 south 17,Bcf,2019,347.9743643438077,347.974364,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,91,PROD-NG,10 11 12 13,Bcf,2019,1442.5957342549252,1442.595734,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,92,PROD-NG,10A,Bcf,2019,17.765048926994652,17.765049,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,93,PROD-NG,11A,Bcf,2019,5.115617706404885,5.115618,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,94,PROD-NG,14A*,Bcf,2019,94.54617801475216,94.546178,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,95,PROD-NG,15A*,Bcf,2019,323.83652245748726,323.836522,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,96,PROD-NG,16A*,Bcf,2019,174.7672995277606,174.767300,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,97,PROD-NG,9A,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,98,PROD-NG,A-18,Bcf,2019,732,732.000000,
+2025_p1-gas.xlsx,P1 Gas,99,PROD-NG,B12/27,Bcf,2019,816.8112811979837,816.811281,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,100,PROD-NG,B-17-01,Bcf,2019,357,357.000000,
+2025_p1-gas.xlsx,P1 Gas,101,PROD-NG,B5/27,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,102,PROD-NG,B6/27,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,103,PROD-NG,B8/32,Bcf,2019,67.88008267450539,67.880083,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,104,PROD-NG,B8/38,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,105,PROD-NG,E5,Bcf,2019,3.5,3.500000,
+2025_p1-gas.xlsx,P1 Gas,106,PROD-NG,E5N*,Bcf,2019,12.804652524642375,12.804653,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,107,PROD-NG,EU1*,Bcf,2019,51.21534747535762,51.215347,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,108,PROD-NG,G1/48,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,109,PROD-NG,G10/48,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,110,PROD-NG,G11/48,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,111,PROD-NG,G12/48,Bcf,2019,10.069369264789081,10.069369,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,112,PROD-NG,G4/43,Bcf,2019,1.4284020456744586,1.428402,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,113,PROD-NG,G4/48,Bcf,2019,0.2182189749042,0.218219,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,114,PROD-NG,G5/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,115,PROD-NG,G6/48,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,116,PROD-NG,G7/50,Bcf,2019,1.3881668831771157,1.388167,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,117,PROD-NG,G8/50,Bcf,2019,1.58,1.580000,
+2025_p1-gas.xlsx,P1 Gas,118,PROD-NG,L1/64,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,119,PROD-NG,L10/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,120,PROD-NG,L11/43,Bcf,2019,0.018,0.018000,
+2025_p1-gas.xlsx,P1 Gas,121,PROD-NG,L15/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,122,PROD-NG,L21/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,123,PROD-NG,L22/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,124,PROD-NG,L27/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,125,PROD-NG,L33/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,126,PROD-NG,L44/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,127,PROD-NG,L53/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,128,PROD-NG,L53/48,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,129,PROD-NG,L54/43,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,130,PROD-NG,PTTEP1,Bcf,2019,0.004473,0.004473,
+2025_p1-gas.xlsx,P1 Gas,131,PROD-NG,S1,Bcf,2019,47.46,47.460000,
+2025_p1-gas.xlsx,P1 Gas,132,PROD-NG,SW1,Bcf,2019,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,133,PROD-NG,15 16 north,Bcf,2020,279.056310933629,279.056311,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,134,PROD-NG,16 south 17,Bcf,2020,235.5286658,235.528666,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,135,PROD-NG,10 11 12 13,Bcf,2020,969.8012980752848,969.801298,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,136,PROD-NG,10A,Bcf,2020,6.596000878561213,6.596001,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,137,PROD-NG,11A,Bcf,2020,1.659628534203716,1.659629,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,138,PROD-NG,14A*,Bcf,2020,93.69978131027887,93.699781,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,139,PROD-NG,15A*,Bcf,2020,320.93747173802467,320.937472,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,140,PROD-NG,16A*,Bcf,2020,173.20274695169653,173.202747,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,141,PROD-NG,9A,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,142,PROD-NG,A-18,Bcf,2020,653.5,653.500000,
+2025_p1-gas.xlsx,P1 Gas,143,PROD-NG,B12/27,Bcf,2020,725.9226237530164,725.922624,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,144,PROD-NG,B-17-01,Bcf,2020,312.66,312.660000,
+2025_p1-gas.xlsx,P1 Gas,145,PROD-NG,B5/27,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,146,PROD-NG,B6/27,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,147,PROD-NG,B8/32,Bcf,2020,61,61.000000,
+2025_p1-gas.xlsx,P1 Gas,148,PROD-NG,B8/38,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,149,PROD-NG,E5,Bcf,2020,0.7,0.700000,
+2025_p1-gas.xlsx,P1 Gas,150,PROD-NG,E5N*,Bcf,2020,7.216367745846562,7.216368,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,151,PROD-NG,EU1*,Bcf,2020,28.863632254153433,28.863632,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,152,PROD-NG,G1/48,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,153,PROD-NG,G10/48,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,154,PROD-NG,G11/48,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,155,PROD-NG,G12/48,Bcf,2020,13.699718962950552,13.699719,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,156,PROD-NG,G4/43,Bcf,2020,1.1600000000000001,1.160000,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,157,PROD-NG,G4/48,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,158,PROD-NG,G5/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,159,PROD-NG,G6/48,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,160,PROD-NG,G7/50,Bcf,2020,1.2337020426126142,1.233702,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,161,PROD-NG,G8/50,Bcf,2020,0.49,0.490000,
+2025_p1-gas.xlsx,P1 Gas,162,PROD-NG,L1/64,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,163,PROD-NG,L10/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,164,PROD-NG,L11/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,165,PROD-NG,L15/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,166,PROD-NG,L21/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,167,PROD-NG,L22/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,168,PROD-NG,L27/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,169,PROD-NG,L33/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,170,PROD-NG,L44/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,171,PROD-NG,L53/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,172,PROD-NG,L53/48,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,173,PROD-NG,L54/43,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,174,PROD-NG,PTTEP1,Bcf,2020,0.001911,0.001911,
+2025_p1-gas.xlsx,P1 Gas,175,PROD-NG,S1,Bcf,2020,60.9712853564,60.971285,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,176,PROD-NG,SW1,Bcf,2020,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,177,PROD-NG,15 16 north,Bcf,2021,165.95,165.950000,
+2025_p1-gas.xlsx,P1 Gas,178,PROD-NG,16 south 17,Bcf,2021,131.764151710603,131.764152,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,179,PROD-NG,10 11 12 13,Bcf,2021,720.6564247404885,720.656425,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,180,PROD-NG,10A,Bcf,2021,3.981329214380729,3.981329,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,181,PROD-NG,11A,Bcf,2021,0.09098390893745799,0.090984,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,182,PROD-NG,14A*,Bcf,2021,85.21762650519125,85.217627,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,183,PROD-NG,15A*,Bcf,2021,291.8846684126798,291.884668,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,184,PROD-NG,16A*,Bcf,2021,157.52360136814602,157.523601,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,185,PROD-NG,9A,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,186,PROD-NG,A-18,Bcf,2021,557.82,557.820000,
+2025_p1-gas.xlsx,P1 Gas,187,PROD-NG,B12/27*,Bcf,2021,690.2215330363607,690.221533,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,188,PROD-NG,B-17-01,Bcf,2021,251.62,251.620000,
+2025_p1-gas.xlsx,P1 Gas,189,PROD-NG,B5/27,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,190,PROD-NG,B6/27,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,191,PROD-NG,B8/32,Bcf,2021,72.4095452228741,72.409545,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,192,PROD-NG,B8/38,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,193,PROD-NG,E5,Bcf,2021,10.4,10.400000,
+2025_p1-gas.xlsx,P1 Gas,194,PROD-NG,E5N*,Bcf,2021,47.57854618584048,47.578546,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,195,PROD-NG,EU1*,Bcf,2021,190.30206173815932,190.302062,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,196,PROD-NG,G1/48,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,197,PROD-NG,G10/48,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,198,PROD-NG,G11/48,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,199,PROD-NG,G12/48,Bcf,2021,12.6125335582063,12.612534,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,200,PROD-NG,G4/43,Bcf,2021,1.311807102637129,1.311807,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,201,PROD-NG,G4/48,Bcf,2021,0.06223653184711789,0.062237,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,202,PROD-NG,G5/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,203,PROD-NG,G6/48,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,204,PROD-NG,G7/50*,Bcf,2021,1.1730282089291748,1.173028,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,205,PROD-NG,G8/50,Bcf,2021,0.576621267417666,0.576621,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,206,PROD-NG,L1/64,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,207,PROD-NG,L10/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,208,PROD-NG,L11/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,209,PROD-NG,L15/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,210,PROD-NG,L21/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,211,PROD-NG,L22/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,212,PROD-NG,L27/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,213,PROD-NG,L33/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,214,PROD-NG,L44/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,215,PROD-NG,L53/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,216,PROD-NG,L53/48,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,217,PROD-NG,L54/43,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,218,PROD-NG,PTTEP1,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,219,PROD-NG,S1,Bcf,2021,51.48525803564269,51.485258,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,220,PROD-NG,SW1,Bcf,2021,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,221,PROD-NG,15,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,222,PROD-NG,16,Bcf,2022,26.63,26.630000,
+2025_p1-gas.xlsx,P1 Gas,223,PROD-NG,17,Bcf,2022,15.699419239554118,15.699419,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,224,PROD-NG,10 11 12 13,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,225,PROD-NG,10A,Bcf,2022,2.27686719,2.276867,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,226,PROD-NG,11A,Bcf,2022,0.032913518,0.032914,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,227,PROD-NG,14A,Bcf,2022,51.726015008147,51.726015,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,228,PROD-NG,15A,Bcf,2022,177.503968317047,177.503968,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,229,PROD-NG,16A,Bcf,2022,254.644117244745,254.644117,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,230,PROD-NG,9A,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,231,PROD-NG,A-18,Bcf,2022,457.02,457.020000,
+2025_p1-gas.xlsx,P1 Gas,232,PROD-NG,B12/27,Bcf,2022,668.9156457704999,668.915646,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,233,PROD-NG,B-17-01,Bcf,2022,342.98,342.980000,
+2025_p1-gas.xlsx,P1 Gas,234,PROD-NG,B5/27,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,235,PROD-NG,B6/27,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,236,PROD-NG,B8/32,Bcf,2022,71.93305766063322,71.933058,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,237,PROD-NG,B8/38,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,238,PROD-NG,E5,Bcf,2022,12.8,12.800000,
+2025_p1-gas.xlsx,P1 Gas,239,PROD-NG,E5N,Bcf,2022,40.49,40.490000,
+2025_p1-gas.xlsx,P1 Gas,240,PROD-NG,EU1,Bcf,2022,161.95,161.950000,
+2025_p1-gas.xlsx,P1 Gas,241,PROD-NG,G1/48,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,242,PROD-NG,G1/61,Bcf,2022,888.1317796459481,888.131780,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,243,PROD-NG,G10/48,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,244,PROD-NG,G11/48,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,245,PROD-NG,G12/48,Bcf,2022,1.1833704842706254,1.183370,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,246,PROD-NG,G2/61,Bcf,2022,1447.7785123035173,1447.778512,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,247,PROD-NG,G4/43,Bcf,2022,1.3326953582933798,1.332695,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,248,PROD-NG,G4/48,Bcf,2022,0.079881231,0.079881,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,249,PROD-NG,G5/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,250,PROD-NG,G6/48,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,251,PROD-NG,G7/50,Bcf,2022,2.003412198,2.003412,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,252,PROD-NG,G8/50,Bcf,2022,0.6062099338347535,0.606210,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,253,PROD-NG,L1/64,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,254,PROD-NG,L10/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,255,PROD-NG,L11/43,Bcf,2022,0.02,0.020000,
+2025_p1-gas.xlsx,P1 Gas,256,PROD-NG,L15/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,257,PROD-NG,L21/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,258,PROD-NG,L22/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,259,PROD-NG,L27/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,260,PROD-NG,L33/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,261,PROD-NG,L44/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,262,PROD-NG,L53/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,263,PROD-NG,L53/48,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,264,PROD-NG,L54/43,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,265,PROD-NG,NC,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,266,PROD-NG,PTTEP1,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,267,PROD-NG,S1,Bcf,2022,33.14,33.140000,
+2025_p1-gas.xlsx,P1 Gas,268,PROD-NG,SW1,Bcf,2022,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,269,PROD-NG,B10 B11 B12 B13,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,270,PROD-NG,B10A B11A,Bcf,2023,1.367648534,1.367649,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,271,PROD-NG,B12/27,Bcf,2023,615.6025205185008,615.602521,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,272,PROD-NG,G7/50,Bcf,2023,1.735196303,1.735196,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,273,PROD-NG,G4/48,Bcf,2023,0.048782141,0.048782,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,274,PROD-NG,B9A,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,275,PROD-NG,B8/32,Bcf,2023,74.85005005928431,74.850050,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,276,PROD-NG,G4/43,Bcf,2023,2.500817109,2.500817,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,277,PROD-NG,B14A,Bcf,2023,52,52.000000,
+2025_p1-gas.xlsx,P1 Gas,278,PROD-NG,B15A,Bcf,2023,186.92,186.920000,
+2025_p1-gas.xlsx,P1 Gas,279,PROD-NG,B16A,Bcf,2023,218.59,218.590000,
+2025_p1-gas.xlsx,P1 Gas,280,PROD-NG,G8/50,Bcf,2023,0.9284333212973119,0.928433,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,281,PROD-NG,B15,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,282,PROD-NG,B16 (North),Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,283,PROD-NG,B16 (South),Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,284,PROD-NG,B17,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,285,PROD-NG,G12/48,Bcf,2023,14.21371298526909,14.213713,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,286,PROD-NG,B6/27,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,287,PROD-NG,B5/27,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,288,PROD-NG,G1/48,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,289,PROD-NG,G11/48,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,290,PROD-NG,B8/38,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,291,PROD-NG,G10/48,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,292,PROD-NG,G6/48,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,293,PROD-NG,G1/61,Bcf,2023,1024.646334575965,1024.646335,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,294,PROD-NG,G2/61,Bcf,2023,1595.592718572382,1595.592719,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,295,PROD-NG,A-18,Bcf,2023,324.37,324.370000,
+2025_p1-gas.xlsx,P1 Gas,296,PROD-NG,B-17-01,Bcf,2023,260.13,260.130000,
+2025_p1-gas.xlsx,P1 Gas,297,PROD-NG,E5,Bcf,2023,10.5,10.500000,
+2025_p1-gas.xlsx,P1 Gas,298,PROD-NG,EU1,Bcf,2023,137.7775521,137.777552,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,299,PROD-NG,E5N,Bcf,2023,34.44438802,34.444388,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,300,PROD-NG,L27/43,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,301,PROD-NG,L33/43,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,302,PROD-NG,L44/43,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,303,PROD-NG,SW1,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,304,PROD-NG,L53/48,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,305,PROD-NG,L22/43,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,306,PROD-NG,L53/43,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,307,PROD-NG,L54/43,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,308,PROD-NG,PTTEP1,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,309,PROD-NG,L1/64,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,310,PROD-NG,L21/43,Bcf,2023,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,311,PROD-NG,S1,Bcf,2023,29.5189613938396,29.518961,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,312,PROD-NG,L10/43,Bcf,2023,0.0113,0.011300,
+2025_p1-gas.xlsx,P1 Gas,313,PROD-NG,L11/43,Bcf,2023,0.0324,0.032400,
+2025_p1-gas.xlsx,P1 Gas,314,PROD-NG,B10A B11A,Bcf,2024,0.642673781,0.642674,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,315,PROD-NG,B12/27,Bcf,2024,634.5981796423745,634.598180,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,316,PROD-NG,G7/50,Bcf,2024,1.690216468,1.690216,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,317,PROD-NG,G4/48,Bcf,2024,0.18192209,0.181922,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,318,PROD-NG,B9A,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,319,PROD-NG,B8/32,Bcf,2024,78.36995981386454,78.369960,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,320,PROD-NG,G4/43,Bcf,2024,3.9035678634424302,3.903568,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,321,PROD-NG,B14A,Bcf,2024,48.78580453713971,48.785805,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,322,PROD-NG,B15A,Bcf,2024,260.11393418858495,260.113934,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,323,PROD-NG,B16A,Bcf,2024,317.89274306512357,317.892743,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,324,PROD-NG,G8/50,Bcf,2024,0.6594162503110835,0.659416,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,325,PROD-NG,G12/48,Bcf,2024,12.62562433843251,12.625624,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,326,PROD-NG,B5/27,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,327,PROD-NG,G1/48,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,328,PROD-NG,G11/48,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,329,PROD-NG,B8/38,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,330,PROD-NG,G10/48,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,331,PROD-NG,G6/48,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,332,PROD-NG,G1/61,Bcf,2024,1016.95774640165,1016.957746,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,333,PROD-NG,G2/61,Bcf,2024,1524.45672077695,1524.456721,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,334,PROD-NG,A-18,Bcf,2024,188,188.000000,
+2025_p1-gas.xlsx,P1 Gas,335,PROD-NG,B-17-01,Bcf,2024,420.8,420.800000,
+2025_p1-gas.xlsx,P1 Gas,336,PROD-NG,E5,Bcf,2024,8.1,8.100000,
+2025_p1-gas.xlsx,P1 Gas,337,PROD-NG,EU1,Bcf,2024,136.12745293320708,136.127453,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,338,PROD-NG,E5N,Bcf,2024,34.03186323330177,34.031863,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,339,PROD-NG,L27/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,340,PROD-NG,L33/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,341,PROD-NG,L44/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,342,PROD-NG,SW1,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,343,PROD-NG,L53/48,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,344,PROD-NG,L22/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,345,PROD-NG,L53/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,346,PROD-NG,L54/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,347,PROD-NG,PTTEP1,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,348,PROD-NG,L1/64,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,349,PROD-NG,L21/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,350,PROD-NG,S1,Bcf,2024,32.62726423203799,32.627264,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,351,PROD-NG,L10/43,Bcf,2024,0.0088,0.008800,
+2025_p1-gas.xlsx,P1 Gas,352,PROD-NG,L11/43,Bcf,2024,0.0299,0.029900,
+2025_p1-gas.xlsx,P1 Gas,353,PROD-NG,G5/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,354,PROD-NG,B10 B11 B12 B13,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,355,PROD-NG,B15,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,356,PROD-NG,B16 (North),Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,357,PROD-NG,B16 (South),Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,358,PROD-NG,B17,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,359,PROD-NG,B6/27,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,360,PROD-NG,NC,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,361,PROD-NG,L15/43,Bcf,2024,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,362,PROD-NG,B10A B11A,Bcf,2025,0.559429551,0.559430,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,363,PROD-NG,B12/27,Bcf,2025,778.6543651943969,778.654365,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,364,PROD-NG,G7/50,Bcf,2025,1.77152694,1.771527,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,365,PROD-NG,G4/48,Bcf,2025,0.129942665,0.129943,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,366,PROD-NG,B9A,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,367,PROD-NG,B8/32,Bcf,2025,72.5882639,72.588264,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,368,PROD-NG,G4/43,Bcf,2025,3.82402674,3.824027,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,369,PROD-NG,B14A,Bcf,2025,73.69193739069853,73.691937,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,370,PROD-NG,B15A,Bcf,2025,316.9260546918811,316.926055,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,371,PROD-NG,B16A,Bcf,2025,293.1533056232122,293.153306,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,372,PROD-NG,G8/50,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,373,PROD-NG,G12/48,Bcf,2025,10.969849571076407,10.969850,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,374,PROD-NG,B5/27,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,375,PROD-NG,G1/48,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,376,PROD-NG,G11/48,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,377,PROD-NG,B8/38,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,378,PROD-NG,G10/48,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,379,PROD-NG,G6/48,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,380,PROD-NG,G1/61,Bcf,2025,983.9766924958192,983.976692,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,381,PROD-NG,G2/61,Bcf,2025,1580.91511928646,1580.915119,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,382,PROD-NG,G3/65,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,383,PROD-NG,A-18,Bcf,2025,129.43,129.430000,
+2025_p1-gas.xlsx,P1 Gas,384,PROD-NG,B-17-01,Bcf,2025,405.63,405.630000,
+2025_p1-gas.xlsx,P1 Gas,385,PROD-NG,E5,Bcf,2025,10.483074454462557,10.483074,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,386,PROD-NG,EU1,Bcf,2025,106.83217934319997,106.832179,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,387,PROD-NG,E5N,Bcf,2025,26.708044835799992,26.708045,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,388,PROD-NG,L27/43,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,389,PROD-NG,L33/43,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,390,PROD-NG,L44/43,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,391,PROD-NG,SW1,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,392,PROD-NG,L53/48,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,393,PROD-NG,L22/43,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,394,PROD-NG,L53/43,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,395,PROD-NG,L54/43,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,396,PROD-NG,PTTEP1,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,397,PROD-NG,L1/64,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,398,PROD-NG,L21/43,Bcf,2025,,,missing reserve retained as NULL
+2025_p1-gas.xlsx,P1 Gas,399,PROD-NG,S1,Bcf,2025,22.926751614357457,22.926752,rounded HALF_UP to 6 decimals
+2025_p1-gas.xlsx,P1 Gas,400,PROD-NG,L10/43,Bcf,2025,0.0167,0.016700,
+2025_p1-gas.xlsx,P1 Gas,401,PROD-NG,L11/43,Bcf,2025,0.0532,0.053200,
+2025_p1-condy.xlsx,P1 Condy,2,PROD-COND,15 16 north,MMbbl,2017,17.0867809484631,17.086781,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,3,PROD-COND,16 south 17,MMbbl,2017,15.473746,15.473746,
+2025_p1-condy.xlsx,P1 Condy,4,PROD-COND,10 11 12 13,MMbbl,2017,66.41420802248595,66.414208,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,5,PROD-COND,10A,MMbbl,2017,0.2825091031540114,0.282509,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,6,PROD-COND,11A,MMbbl,2017,0.9093363648994182,0.909336,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,7,PROD-COND,14A*,MMbbl,2017,1.9273999109262423,1.927400,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,8,PROD-COND,15A*,MMbbl,2017,6.601668069986247,6.601668,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,9,PROD-COND,16A*,MMbbl,2017,3.56277201908751,3.562772,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,10,PROD-COND,9A,MMbbl,2017,0,0.000000,
+2025_p1-condy.xlsx,P1 Condy,11,PROD-COND,A-18,MMbbl,2017,8.3,8.300000,
+2025_p1-condy.xlsx,P1 Condy,12,PROD-COND,B12/27,MMbbl,2017,30.253408821937562,30.253409,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,13,PROD-COND,B-17-01,MMbbl,2017,13.16,13.160000,
+2025_p1-condy.xlsx,P1 Condy,14,PROD-COND,B5/27,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,15,PROD-COND,B6/27,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,16,PROD-COND,B8/32,MMbbl,2017,1.7846595898497646,1.784660,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,17,PROD-COND,B8/38,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,18,PROD-COND,E5,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,19,PROD-COND,E5N*,MMbbl,2017,0.05405075442454476,0.054051,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,20,PROD-COND,EU1*,MMbbl,2017,0.2161892455754552,0.216189,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,21,PROD-COND,G1/48,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,22,PROD-COND,G10/48,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,23,PROD-COND,G11/48,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,24,PROD-COND,G4/43,MMbbl,2017,0.00025257061179840006,0.000253,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,25,PROD-COND,G4/48,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,26,PROD-COND,G5/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,27,PROD-COND,G6/48,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,28,PROD-COND,G7/50,MMbbl,2017,0.05141552424231599,0.051416,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,29,PROD-COND,G8/50,MMbbl,2017,0.01941,0.019410,
+2025_p1-condy.xlsx,P1 Condy,30,PROD-COND,L1/64,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,31,PROD-COND,L10/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,32,PROD-COND,L11/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,33,PROD-COND,L15/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,34,PROD-COND,L21/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,35,PROD-COND,L22/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,36,PROD-COND,L27/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,37,PROD-COND,L33/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,38,PROD-COND,L44/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,39,PROD-COND,L53/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,40,PROD-COND,L53/48,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,41,PROD-COND,L54/43,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,42,PROD-COND,PTTEP1,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,43,PROD-COND,S1,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,44,PROD-COND,SW1,MMbbl,2017,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,45,PROD-COND,15 16 north,MMbbl,2018,12.77,12.770000,
+2025_p1-condy.xlsx,P1 Condy,46,PROD-COND,16 south 17,MMbbl,2018,12.26,12.260000,
+2025_p1-condy.xlsx,P1 Condy,47,PROD-COND,10 11 12 13,MMbbl,2018,57.065368271448065,57.065368,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,48,PROD-COND,10A,MMbbl,2018,0.3513895281976059,0.351390,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,49,PROD-COND,11A,MMbbl,2018,0.43509703312266557,0.435097,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,50,PROD-COND,14A*,MMbbl,2018,3.879058412145101,3.879058,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,51,PROD-COND,15A*,MMbbl,2018,13.286425881779467,13.286426,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,52,PROD-COND,16A*,MMbbl,2018,7.170385706075433,7.170386,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,53,PROD-COND,9A,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,54,PROD-COND,A-18,MMbbl,2018,8.55,8.550000,
+2025_p1-condy.xlsx,P1 Condy,55,PROD-COND,B12/27,MMbbl,2018,30.819786882981195,30.819787,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,56,PROD-COND,B-17-01,MMbbl,2018,6.81,6.810000,
+2025_p1-condy.xlsx,P1 Condy,57,PROD-COND,B5/27,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,58,PROD-COND,B6/27,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,59,PROD-COND,B8/32,MMbbl,2018,1.5316285219978187,1.531629,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,60,PROD-COND,B8/38,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,61,PROD-COND,E5,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,62,PROD-COND,E5N*,MMbbl,2018,0.056002853903465565,0.056003,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,63,PROD-COND,EU1*,MMbbl,2018,0.22399714609653446,0.223997,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,64,PROD-COND,G1/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,65,PROD-COND,G10/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,66,PROD-COND,G11/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,67,PROD-COND,G12/48,MMbbl,2018,0.42,0.420000,
+2025_p1-condy.xlsx,P1 Condy,68,PROD-COND,G4/43,MMbbl,2018,0.003218957236521127,0.003219,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,69,PROD-COND,G4/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,70,PROD-COND,G5/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,71,PROD-COND,G6/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,72,PROD-COND,G7/50,MMbbl,2018,0.05237808106026996,0.052378,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,73,PROD-COND,G8/50,MMbbl,2018,0.03663,0.036630,
+2025_p1-condy.xlsx,P1 Condy,74,PROD-COND,L1/64,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,75,PROD-COND,L10/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,76,PROD-COND,L11/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,77,PROD-COND,L15/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,78,PROD-COND,L21/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,79,PROD-COND,L22/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,80,PROD-COND,L27/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,81,PROD-COND,L33/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,82,PROD-COND,L44/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,83,PROD-COND,L53/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,84,PROD-COND,L53/48,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,85,PROD-COND,L54/43,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,86,PROD-COND,PTTEP1,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,87,PROD-COND,S1,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,88,PROD-COND,SW1,MMbbl,2018,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,89,PROD-COND,15 16 north,MMbbl,2019,8.234107576642177,8.234108,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,90,PROD-COND,16 south 17,MMbbl,2019,10.05388565882902,10.053886,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,91,PROD-COND,10 11 12 13,MMbbl,2019,39.977254879210165,39.977255,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,92,PROD-COND,10A,MMbbl,2019,0.21141424707396825,0.211414,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,93,PROD-COND,11A,MMbbl,2019,0.17959893775185318,0.179599,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,94,PROD-COND,14A*,MMbbl,2019,3.7936424795601473,3.793642,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,95,PROD-COND,15A*,MMbbl,2019,12.993861981772229,12.993862,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,96,PROD-COND,16A*,MMbbl,2019,7.0124955386676255,7.012496,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,97,PROD-COND,9A,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,98,PROD-COND,A-18,MMbbl,2019,7.45,7.450000,
+2025_p1-condy.xlsx,P1 Condy,99,PROD-COND,B12/27,MMbbl,2019,29.143326617931628,29.143327,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,100,PROD-COND,B-17-01,MMbbl,2019,6.4,6.400000,
+2025_p1-condy.xlsx,P1 Condy,101,PROD-COND,B5/27,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,102,PROD-COND,B6/27,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,103,PROD-COND,B8/32,MMbbl,2019,1.2203161133262204,1.220316,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,104,PROD-COND,B8/38,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,105,PROD-COND,E5,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,106,PROD-COND,E5N*,MMbbl,2019,0.040488063270280476,0.040488,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,107,PROD-COND,EU1*,MMbbl,2019,0.16194193672971952,0.161942,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,108,PROD-COND,G1/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,109,PROD-COND,G10/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,110,PROD-COND,G11/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,111,PROD-COND,G12/48,MMbbl,2019,0.25533133109459655,0.255331,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,112,PROD-COND,G4/43,MMbbl,2019,0.0004048825672058576,0.000405,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,113,PROD-COND,G4/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,114,PROD-COND,G5/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,115,PROD-COND,G6/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,116,PROD-COND,G7/50,MMbbl,2019,0.049528944822226195,0.049529,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,117,PROD-COND,G8/50,MMbbl,2019,0.03,0.030000,
+2025_p1-condy.xlsx,P1 Condy,118,PROD-COND,L1/64,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,119,PROD-COND,L10/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,120,PROD-COND,L11/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,121,PROD-COND,L15/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,122,PROD-COND,L21/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,123,PROD-COND,L22/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,124,PROD-COND,L27/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,125,PROD-COND,L33/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,126,PROD-COND,L44/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,127,PROD-COND,L53/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,128,PROD-COND,L53/48,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,129,PROD-COND,L54/43,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,130,PROD-COND,PTTEP1,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,131,PROD-COND,S1,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,132,PROD-COND,SW1,MMbbl,2019,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,133,PROD-COND,15 16 north,MMbbl,2020,7.34623,7.346230,
+2025_p1-condy.xlsx,P1 Condy,134,PROD-COND,16 south 17,MMbbl,2020,6.927044725,6.927045,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,135,PROD-COND,10 11 12 13,MMbbl,2020,25.402642882354986,25.402643,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,136,PROD-COND,10A,MMbbl,2020,0.10444859857634085,0.104449,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,137,PROD-COND,11A,MMbbl,2020,0.057113310182006286,0.057113,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,138,PROD-COND,14A*,MMbbl,2020,3.6571430788302597,3.657143,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,139,PROD-COND,15A*,MMbbl,2020,12.52632863269279,12.526329,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,140,PROD-COND,16A*,MMbbl,2020,6.760178288476953,6.760178,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,141,PROD-COND,9A,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,142,PROD-COND,A-18,MMbbl,2020,6.67,6.670000,
+2025_p1-condy.xlsx,P1 Condy,143,PROD-COND,B12/27,MMbbl,2020,25.439615907027726,25.439616,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,144,PROD-COND,B-17-01,MMbbl,2020,6.35,6.350000,
+2025_p1-condy.xlsx,P1 Condy,145,PROD-COND,B5/27,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,146,PROD-COND,B6/27,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,147,PROD-COND,B8/32,MMbbl,2020,1,1.000000,
+2025_p1-condy.xlsx,P1 Condy,148,PROD-COND,B8/38,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,149,PROD-COND,E5,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,150,PROD-COND,E5N*,MMbbl,2020,0.02400122310148524,0.024001,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,151,PROD-COND,EU1*,MMbbl,2020,0.09599877689851474,0.095999,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,152,PROD-COND,G1/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,153,PROD-COND,G10/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,154,PROD-COND,G11/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,155,PROD-COND,G12/48,MMbbl,2020,0.230159412,0.230159,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,156,PROD-COND,G4/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,157,PROD-COND,G4/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,158,PROD-COND,G5/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,159,PROD-COND,G6/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,160,PROD-COND,G7/50,MMbbl,2020,0.04323450610413634,0.043235,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,161,PROD-COND,G8/50,MMbbl,2020,0.0121,0.012100,
+2025_p1-condy.xlsx,P1 Condy,162,PROD-COND,L1/64,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,163,PROD-COND,L10/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,164,PROD-COND,L11/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,165,PROD-COND,L15/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,166,PROD-COND,L21/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,167,PROD-COND,L22/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,168,PROD-COND,L27/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,169,PROD-COND,L33/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,170,PROD-COND,L44/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,171,PROD-COND,L53/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,172,PROD-COND,L53/48,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,173,PROD-COND,L54/43,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,174,PROD-COND,PTTEP1,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,175,PROD-COND,S1,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,176,PROD-COND,SW1,MMbbl,2020,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,177,PROD-COND,15 16 north,MMbbl,2021,3.47,3.470000,
+2025_p1-condy.xlsx,P1 Condy,178,PROD-COND,16 south 17,MMbbl,2021,3.8987933422985503,3.898793,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,179,PROD-COND,10 11 12 13,MMbbl,2021,19.02134819546238,19.021348,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,180,PROD-COND,10A,MMbbl,2021,0.061066004759307874,0.061066,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,181,PROD-COND,11A,MMbbl,2021,0.0030152067421873583,0.003015,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,182,PROD-COND,14A*,MMbbl,2021,3.6417600396696614,3.641760,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,183,PROD-COND,15A*,MMbbl,2021,12.4736391426341,12.473639,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,184,PROD-COND,16A*,MMbbl,2021,6.731742953817439,6.731743,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,185,PROD-COND,9A,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,186,PROD-COND,A-18,MMbbl,2021,5.97,5.970000,
+2025_p1-condy.xlsx,P1 Condy,187,PROD-COND,B12/27*,MMbbl,2021,24.004490657342497,24.004491,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,188,PROD-COND,B-17-01,MMbbl,2021,5.14,5.140000,
+2025_p1-condy.xlsx,P1 Condy,189,PROD-COND,B5/27,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,190,PROD-COND,B6/27,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,191,PROD-COND,B8/32,MMbbl,2021,1.1392534462567836,1.139253,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,192,PROD-COND,B8/38,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,193,PROD-COND,E5,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,194,PROD-COND,E5N*,MMbbl,2021,0.12554682550124185,0.125547,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,195,PROD-COND,EU1*,MMbbl,2021,0.5021553126959042,0.502155,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,196,PROD-COND,G1/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,197,PROD-COND,G10/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,198,PROD-COND,G11/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,199,PROD-COND,G12/48,MMbbl,2021,0.16780298602551202,0.167803,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,200,PROD-COND,G4/43,MMbbl,2021,0.006112868988471012,0.006113,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,201,PROD-COND,G4/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,202,PROD-COND,G5/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,203,PROD-COND,G6/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,204,PROD-COND,G7/50*,MMbbl,2021,0.040795517575595866,0.040796,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,205,PROD-COND,G8/50,MMbbl,2021,0.0272967833603374,0.027297,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,206,PROD-COND,L1/64,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,207,PROD-COND,L10/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,208,PROD-COND,L11/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,209,PROD-COND,L15/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,210,PROD-COND,L21/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,211,PROD-COND,L22/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,212,PROD-COND,L27/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,213,PROD-COND,L33/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,214,PROD-COND,L44/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,215,PROD-COND,L53/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,216,PROD-COND,L53/48,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,217,PROD-COND,L54/43,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,218,PROD-COND,PTTEP1,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,219,PROD-COND,S1,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,220,PROD-COND,SW1,MMbbl,2021,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,221,PROD-COND,15,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,222,PROD-COND,16,MMbbl,2022,0.56,0.560000,
+2025_p1-condy.xlsx,P1 Condy,223,PROD-COND,17,MMbbl,2022,0.44255234894276496,0.442552,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,224,PROD-COND,10 11 12 13,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,225,PROD-COND,10A,MMbbl,2022,0.054855531,0.054856,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,226,PROD-COND,11A,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,227,PROD-COND,14A,MMbbl,2022,1.46324782982843,1.463248,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,228,PROD-COND,15A,MMbbl,2022,5.6427616739243405,5.642762,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,229,PROD-COND,16A,MMbbl,2022,11.8550353679859,11.855035,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,230,PROD-COND,9A,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,231,PROD-COND,A-18,MMbbl,2022,4.71,4.710000,
+2025_p1-condy.xlsx,P1 Condy,232,PROD-COND,B12/27,MMbbl,2022,23.040182046242037,23.040182,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,233,PROD-COND,B-17-01,MMbbl,2022,8.4,8.400000,
+2025_p1-condy.xlsx,P1 Condy,234,PROD-COND,B5/27,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,235,PROD-COND,B6/27,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,236,PROD-COND,B8/32,MMbbl,2022,1.012674311063772,1.012674,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,237,PROD-COND,B8/38,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,238,PROD-COND,E5,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,239,PROD-COND,E5N,MMbbl,2022,0.106377327639429,0.106377,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,240,PROD-COND,EU1,MMbbl,2022,0.425509310557717,0.425509,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,241,PROD-COND,G1/48,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,242,PROD-COND,G1/61,MMbbl,2022,35.1619873712777,35.161987,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,243,PROD-COND,G10/48,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,244,PROD-COND,G11/48,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,245,PROD-COND,G12/48,MMbbl,2022,0.0261631010279116,0.026163,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,246,PROD-COND,G2/61,MMbbl,2022,38.7729693853552,38.772969,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,247,PROD-COND,G4/43,MMbbl,2022,0.00602999391783769,0.006030,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,248,PROD-COND,G4/48,MMbbl,2022,0.001001248,0.001001,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,249,PROD-COND,G5/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,250,PROD-COND,G6/48,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,251,PROD-COND,G7/50,MMbbl,2022,0.11820198999999999,0.118202,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,252,PROD-COND,G8/50,MMbbl,2022,0.028697486829199998,0.028697,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,253,PROD-COND,L1/64,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,254,PROD-COND,L10/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,255,PROD-COND,L11/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,256,PROD-COND,L15/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,257,PROD-COND,L21/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,258,PROD-COND,L22/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,259,PROD-COND,L27/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,260,PROD-COND,L33/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,261,PROD-COND,L44/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,262,PROD-COND,L53/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,263,PROD-COND,L53/48,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,264,PROD-COND,L54/43,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,265,PROD-COND,NC,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,266,PROD-COND,PTTEP1,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,267,PROD-COND,S1,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,268,PROD-COND,SW1,MMbbl,2022,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,269,PROD-COND,B10 B11 B12 B13,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,270,PROD-COND,B10A B11A,MMbbl,2023,0.031138397999999998,0.031138,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,271,PROD-COND,B12/27,MMbbl,2023,20.82013963588947,20.820140,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,272,PROD-COND,G7/50,MMbbl,2023,0.10781413200000001,0.107814,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,273,PROD-COND,G4/48,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,274,PROD-COND,B9A,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,275,PROD-COND,B8/32,MMbbl,2023,1.2148749842559818,1.214875,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,276,PROD-COND,G4/43,MMbbl,2023,0.016061712,0.016062,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,277,PROD-COND,B14A,MMbbl,2023,1.05227859320945,1.052279,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,278,PROD-COND,B15A,MMbbl,2023,5.72632511272942,5.726325,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,279,PROD-COND,B16A,MMbbl,2023,10.343049944366399,10.343050,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,280,PROD-COND,G8/50,MMbbl,2023,0.051561032468354,0.051561,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,281,PROD-COND,B15,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,282,PROD-COND,B16 (North),MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,283,PROD-COND,B16 (South),MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,284,PROD-COND,B17,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,285,PROD-COND,G12/48,MMbbl,2023,0.300408255147862,0.300408,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,286,PROD-COND,B6/27,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,287,PROD-COND,B5/27,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,288,PROD-COND,G1/48,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,289,PROD-COND,G11/48,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,290,PROD-COND,B8/38,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,291,PROD-COND,G10/48,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,292,PROD-COND,G6/48,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,293,PROD-COND,G1/61,MMbbl,2023,32.270360533042485,32.270361,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,294,PROD-COND,G2/61,MMbbl,2023,45.3973240858238,45.397324,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,295,PROD-COND,A-18,MMbbl,2023,3.18,3.180000,
+2025_p1-condy.xlsx,P1 Condy,296,PROD-COND,B-17-01,MMbbl,2023,7,7.000000,
+2025_p1-condy.xlsx,P1 Condy,297,PROD-COND,E5,MMbbl,2023,0,0.000000,
+2025_p1-condy.xlsx,P1 Condy,298,PROD-COND,EU1,MMbbl,2023,0.30443738839999995,0.304437,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,299,PROD-COND,E5N,MMbbl,2023,0.07610934709999999,0.076109,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,300,PROD-COND,L27/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,301,PROD-COND,L33/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,302,PROD-COND,L44/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,303,PROD-COND,SW1,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,304,PROD-COND,L53/48,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,305,PROD-COND,L22/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,306,PROD-COND,L53/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,307,PROD-COND,L54/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,308,PROD-COND,PTTEP1,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,309,PROD-COND,L1/64,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,310,PROD-COND,L21/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,311,PROD-COND,S1,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,312,PROD-COND,L10/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,313,PROD-COND,L11/43,MMbbl,2023,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,314,PROD-COND,B10A B11A,MMbbl,2024,0.014911050999999998,0.014911,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,315,PROD-COND,B12/27,MMbbl,2024,21.34192949923479,21.341929,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,316,PROD-COND,G7/50,MMbbl,2024,0.10238776699999999,0.102388,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,317,PROD-COND,G4/48,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,318,PROD-COND,B9A,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,319,PROD-COND,B8/32,MMbbl,2024,1.1467983458438922,1.146798,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,320,PROD-COND,G4/43,MMbbl,2024,0.00893834419635847,0.008938,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,321,PROD-COND,B14A,MMbbl,2024,1.18138087195741,1.181381,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,322,PROD-COND,B15A,MMbbl,2024,13.4710655110458,13.471066,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,323,PROD-COND,B16A,MMbbl,2024,15.846065324857,15.846065,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,324,PROD-COND,G8/50,MMbbl,2024,0.0349432222830913,0.034943,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,325,PROD-COND,G12/48,MMbbl,2024,0.24687452179878183,0.246875,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,326,PROD-COND,B5/27,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,327,PROD-COND,G1/48,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,328,PROD-COND,G11/48,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,329,PROD-COND,B8/38,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,330,PROD-COND,G10/48,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,331,PROD-COND,G6/48,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,332,PROD-COND,G1/61,MMbbl,2024,34.0533787425557,34.053379,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,333,PROD-COND,G2/61,MMbbl,2024,45.6273013873206,45.627301,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,334,PROD-COND,A-18,MMbbl,2024,1.9,1.900000,
+2025_p1-condy.xlsx,P1 Condy,335,PROD-COND,B-17-01,MMbbl,2024,12.86,12.860000,
+2025_p1-condy.xlsx,P1 Condy,336,PROD-COND,E5,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,337,PROD-COND,EU1,MMbbl,2024,0.285337972281302,0.285338,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,338,PROD-COND,E5N,MMbbl,2024,0.0713344930703255,0.071334,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,339,PROD-COND,L27/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,340,PROD-COND,L33/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,341,PROD-COND,L44/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,342,PROD-COND,SW1,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,343,PROD-COND,L53/48,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,344,PROD-COND,L22/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,345,PROD-COND,L53/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,346,PROD-COND,L54/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,347,PROD-COND,PTTEP1,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,348,PROD-COND,L1/64,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,349,PROD-COND,L21/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,350,PROD-COND,S1,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,351,PROD-COND,L10/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,352,PROD-COND,L11/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,353,PROD-COND,G5/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,354,PROD-COND,B10 B11 B12 B13,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,355,PROD-COND,B15,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,356,PROD-COND,B16 (North),MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,357,PROD-COND,B16 (South),MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,358,PROD-COND,B17,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,359,PROD-COND,B6/27,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,360,PROD-COND,NC,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,361,PROD-COND,L15/43,MMbbl,2024,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,362,PROD-COND,B10A B11A,MMbbl,2025,0.006117663000000001,0.006118,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,363,PROD-COND,B12/27,MMbbl,2025,26.3511927674209,26.351193,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,364,PROD-COND,G7/50,MMbbl,2025,0.107304396,0.107304,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,365,PROD-COND,G4/48,MMbbl,2025,0.000371668,0.000372,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,366,PROD-COND,B9A,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,367,PROD-COND,B8/32,MMbbl,2025,0.899,0.899000,
+2025_p1-condy.xlsx,P1 Condy,368,PROD-COND,G4/43,MMbbl,2025,0.004690000000000001,0.004690,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,369,PROD-COND,B14A,MMbbl,2025,1.68627316374377,1.686273,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,370,PROD-COND,B15A,MMbbl,2025,16.2220014586509,16.222001,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,371,PROD-COND,B16A,MMbbl,2025,14.9241872731805,14.924187,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,372,PROD-COND,G8/50,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,373,PROD-COND,G12/48,MMbbl,2025,0.206915734393572,0.206916,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,374,PROD-COND,B5/27,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,375,PROD-COND,G1/48,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,376,PROD-COND,G11/48,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,377,PROD-COND,B8/38,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,378,PROD-COND,G10/48,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,379,PROD-COND,G6/48,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,380,PROD-COND,G1/61,MMbbl,2025,31.88165428980612,31.881654,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,381,PROD-COND,G2/61,MMbbl,2025,46.377384726924,46.377385,rounded HALF_UP to 6 decimals
+2025_p1-condy.xlsx,P1 Condy,382,PROD-COND,G3/65,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,383,PROD-COND,A-18,MMbbl,2025,1.64,1.640000,
+2025_p1-condy.xlsx,P1 Condy,384,PROD-COND,B-17-01,MMbbl,2025,12.72,12.720000,
+2025_p1-condy.xlsx,P1 Condy,385,PROD-COND,E5,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,386,PROD-COND,EU1,MMbbl,2025,0.182513949197878,0.182514,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: =182.513949197878/1000
+2025_p1-condy.xlsx,P1 Condy,387,PROD-COND,E5N,MMbbl,2025,0.0456284872994695,0.045628,rounded HALF_UP to 6 decimals; cached Excel formula result; not recalculated: =45.6284872994695/1000
+2025_p1-condy.xlsx,P1 Condy,388,PROD-COND,L27/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,389,PROD-COND,L33/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,390,PROD-COND,L44/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,391,PROD-COND,SW1,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,392,PROD-COND,L53/48,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,393,PROD-COND,L22/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,394,PROD-COND,L53/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,395,PROD-COND,L54/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,396,PROD-COND,PTTEP1,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,397,PROD-COND,L1/64,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,398,PROD-COND,L21/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,399,PROD-COND,S1,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,400,PROD-COND,L10/43,MMbbl,2025,,,missing reserve retained as NULL
+2025_p1-condy.xlsx,P1 Condy,401,PROD-COND,L11/43,MMbbl,2025,,,missing reserve retained as NULL
