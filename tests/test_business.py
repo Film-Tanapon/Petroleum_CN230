@@ -1,7 +1,7 @@
 """SRS pages 7–8. Audits also run read-only on the team snapshot in test_acceptance."""
 import pytest
 from mysql.connector import Error
-from test_database import TABLES, insert, seed_parents
+from tests.test_database import TABLES, insert, seed_parents
 
 MONEY = [('Price_Monthly','unit_price'), ('Sale','royalty'), ('Sale','sale_value'),
          ('Emission_Factor','factor_value')]

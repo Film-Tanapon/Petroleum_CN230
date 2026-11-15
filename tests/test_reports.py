@@ -1,7 +1,7 @@
 from decimal import Decimal
 import pytest
-from reports import statements
-from test_database import insert
+from scripts.reports import statements
+from tests.test_database import insert
 
 
 @pytest.fixture

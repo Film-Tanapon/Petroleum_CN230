@@ -1,1 +1,1 @@
-from test_database import connection, cur
+from tests.test_database import connection, cur

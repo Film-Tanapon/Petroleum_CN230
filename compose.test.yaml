@@ -8,9 +8,9 @@ services:
       MYSQL_PASSWORD: test_password
     volumes:
       - srs_data:/var/lib/mysql
-      - ./02_accounts.sql:/docker-entrypoint-initdb.d/02_accounts.sql:ro
+      - ./database/02_accounts.sql:/docker-entrypoint-initdb.d/02_accounts.sql:ro
       - type: bind
-        source: ./schema.sql
+        source: ./database/schema.sql
         target: /docker-entrypoint-initdb.d/01-schema.sql
         read_only: true
         bind:

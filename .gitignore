@@ -12,7 +12,8 @@
 petroleum.cypher
 petroleum_import_review.csv
 section6-live.xml
-outputs/
+outputs/*
+!outputs/.gitkeep
 
 # Python and editor artifacts
 __pycache__/

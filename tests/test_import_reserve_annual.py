@@ -1,8 +1,8 @@
-"""Run: py -3.12 -m unittest discover -s Test -p test_import_reserve_annual.py"""
+"""Run: py -3.12 -m unittest discover -s tests -p test_import_reserve_annual.py"""
 from decimal import Decimal
 import unittest
 
-from import_data import ROOT, identifier, parse_value, read_reserve_records
+from scripts.import_data import ROOT, identifier, parse_value, read_reserve_records
 
 
 class ReserveTests(unittest.TestCase):

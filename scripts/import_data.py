@@ -1,9 +1,9 @@
 """Import petroleum CSV, emission factors, and annual reserves from one entry point.
 
 Usage:
-    py import_data.py --type csv --database petroleum --dry-run
-    py import_data.py --type emission --dry-run
-    py import_data.py --type reserve --dry-run
+    py -m scripts.import_data --type csv --database petroleum --dry-run
+    py -m scripts.import_data --type emission --dry-run
+    py -m scripts.import_data --type reserve --dry-run
 
 Run CSV before the Excel imports: CSV mode resets all ten project tables.
 Each mode requires --dry-run (rollback) or --apply (commit).
@@ -23,7 +23,7 @@ import mysql.connector
 from dotenv import load_dotenv
 from openpyxl import load_workbook
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 
 
 DEFAULT_CSV_FOLDER = ROOT / "CN230 Petrolium Data"
@@ -72,7 +72,7 @@ def parse_csv_args(argv=None):
     p.add_argument("--sale-currency", help="Set only if the currency of values/royalty is confirmed.")
     p.add_argument("--gas-price-unit", help="Confirmed gas price denominator (e.g. MMBtu); default NULL.")
     p.add_argument("--include-negative-sales", action="store_true", help="Keep negative sale values/royalties if your rules permit.")
-    p.add_argument("--report", type=Path, default=Path("petroleum_import_review.csv"))
+    p.add_argument("--report", type=Path, default=ROOT / "outputs" / "petroleum_import_review.csv")
     p.add_argument("--supply-area-column", default="area", help="Actual column for supply area")
     p.add_argument("--supply-rate-column", default="daily_rate", help="Actual column for daily supply rate")
     return p.parse_args(argv)
@@ -398,7 +398,7 @@ def import_emission_records(db, records, apply=False):
                             "WHERE TABLE_SCHEMA=DATABASE() AND TABLE_NAME=%s", (table,))
                 row = cur.fetchone()
                 if not row or row[0] != "InnoDB":
-                    raise ValueError(f"{table}: expected an existing InnoDB table; run schema.sql first")
+                    raise ValueError(f"{table}: expected an existing InnoDB table; run database/schema.sql first")
             cur.execute("SET SESSION sql_mode=CONCAT_WS(',',NULLIF(@@sql_mode,''),'STRICT_ALL_TABLES')")
             products, units = {}, {}
             for record in records:
@@ -649,7 +649,7 @@ def import_reserve_main(argv=None):
     parser.add_argument('--port', type=int, default=int(os.getenv('MYSQL_PORT', '3308')))
     parser.add_argument('--database', default=os.getenv('MYSQL_DATABASE', 'petroleum'))
     parser.add_argument('--user', default=os.getenv('MYSQL_USER', 'root'))
-    parser.add_argument('--report', type=Path, default=ROOT / 'reserve_import_review.csv')
+    parser.add_argument('--report', type=Path, default=ROOT / 'outputs' / 'reserve_import_review.csv')
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument('--dry-run', action='store_true')
     mode.add_argument('--apply', action='store_true')

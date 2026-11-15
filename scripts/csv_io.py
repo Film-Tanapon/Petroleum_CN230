@@ -1,9 +1,8 @@
 """CSV interchange for domestic supply. UTF-8 with BOM for Excel, DECIMAL values kept as text in transit."""
 import csv
 from pathlib import Path
-from test_database import TABLES
 
-COLUMNS=TABLES['Supply_Monthly']
+COLUMNS='supply_id product_id unit_id area daily_rate month year'.split()
 
 
 def export_supply(cur,path):

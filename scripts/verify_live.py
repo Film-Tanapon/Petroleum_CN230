@@ -7,9 +7,9 @@ import uuid
 import mysql.connector as mysql
 import pytest
 
-from reports import statements
-from test_business import AUDITS
-from test_database import TABLES
+from scripts.reports import statements
+from tests.test_business import AUDITS
+from tests.test_database import TABLES
 
 
 def connect(user, password):

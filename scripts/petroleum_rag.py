@@ -277,10 +277,10 @@ def ask(args):
 
 def main():
     from dotenv import load_dotenv
-    load_dotenv(Path(__file__).with_name('.env'), override=False, encoding='utf-8-sig', interpolate=False)
+    load_dotenv(Path(__file__).resolve().parents[1] / '.env', override=False, encoding='utf-8-sig', interpolate=False)
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=['build', 'ask', 'models'])
-    parser.add_argument('--index', type=Path, default=Path(__file__).with_name('petroleum_index.sqlite'))
+    parser.add_argument('--index', type=Path, default=Path(__file__).resolve().parents[1] / 'outputs' / 'petroleum_index.sqlite')
     parser.add_argument('--host', default=os.getenv('MYSQL_HOST', '127.0.0.1'))
     parser.add_argument('--port', type=int, default=int(os.getenv('MYSQL_PORT', '3308')))
     parser.add_argument('--database', default=os.getenv('MYSQL_DATABASE', 'petroleum'))

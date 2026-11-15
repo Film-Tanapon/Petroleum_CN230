@@ -5,7 +5,7 @@ import subprocess
 import time
 import uuid
 
-ROOT=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[1]
 COMPOSE=['docker','compose','-p','cn230-section6','-f',str(ROOT/'compose.test.yaml')]
 
 
@@ -33,7 +33,7 @@ def run_ops(invoke,restart):
         for name in (source,restore):
             sql('CREATE DATABASE '+name+' CHARACTER SET utf8mb4')
             created.append(name)
-        invoke('mysql',[source],(ROOT/'schema.sql').read_bytes())
+        invoke('mysql',[source],(ROOT/'database'/'schema.sql').read_bytes())
         sql("""START TRANSACTION;
             INSERT INTO Product(product_id,name) VALUES (91,'เก่า'),(92,'old'),(93,'delete');
             INSERT INTO Unit(unit_id,symbol,description) VALUES(91,'BBLD','barrels/day');

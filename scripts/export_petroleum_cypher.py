@@ -99,7 +99,7 @@ def main():
     parser.add_argument("--port", type=int, default=3308)
     parser.add_argument("--database", default="petroleum")
     parser.add_argument("--user", default="root")
-    parser.add_argument("--out", type=Path, default=Path("petroleum.cypher"))
+    parser.add_argument("--out", type=Path, default=Path(__file__).resolve().parents[1] / "outputs" / "petroleum.cypher")
     args = parser.parse_args()
     db = mysql.connector.connect(host=args.host, port=args.port, database=args.database,
                                  user=args.user, charset="utf8mb4",

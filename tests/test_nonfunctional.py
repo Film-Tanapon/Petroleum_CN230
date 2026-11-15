@@ -3,8 +3,8 @@ from decimal import Decimal
 import mysql.connector
 from mysql.connector import Error
 import pytest
-from csv_io import export_supply, import_supply
-from test_database import insert, TABLES
+from scripts.csv_io import export_supply, import_supply
+from tests.test_database import insert, TABLES
 
 
 def connect(user,password):

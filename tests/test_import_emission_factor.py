@@ -1,8 +1,8 @@
-"""Run independently: py -3.12 -m unittest discover -s Test -p test_import_emission_factor.py"""
+"""Run independently: py -3.12 -m unittest discover -s tests -p test_import_emission_factor.py"""
 import unittest
 from unittest.mock import MagicMock, patch
 
-from import_data import COLUMNS, DEFAULT_FILE, read_emission_records, resolve_reference
+from scripts.import_data import COLUMNS, DEFAULT_FILE, read_emission_records, resolve_reference
 
 
 class ExcelValidationTests(unittest.TestCase):
@@ -10,7 +10,7 @@ class ExcelValidationTests(unittest.TestCase):
         book = MagicMock()
         book.sheetnames = ["MySQL_Import_Ready"]
         book.__getitem__.return_value.iter_rows.return_value = iter([COLUMNS, *rows])
-        with patch("import_data.load_workbook", return_value=book):
+        with patch("scripts.import_data.load_workbook", return_value=book):
             return read_emission_records("unused.xlsx")
 
     def test_actual_workbook_has_35_valid_factors(self):
